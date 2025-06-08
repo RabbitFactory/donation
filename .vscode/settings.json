@@ -1,15 +1,16 @@
 {
-  "tailwindCSS.includeLanguages": {
-    "html": "html",
-    "javascript": "javascript",
-    "css": "css"
-  },
-  "tailwindCSS.experimental.classRegex": [
-    ["class:\\s*?[\"'`]([^\"'`]*).*?[\"'`]", "[\"'`]([^\"'`]*)[\"'`]"]
-  ],
-  "editor.quickSuggestions": {
-    "strings": true
-  },
-  "css.validate": false,
-  "tailwindCSS.emmetCompletions": true
+    "tailwindCSS.includeLanguages": {
+        "html": "html",
+        "javascript": "javascript",
+        "css": "css"
+    },
+    "tailwindCSS.experimental.classRegex": [
+        ["class:\\s*?[\"'`]([^\"'`]*).*?[\"'`]", "[\"'`]([^\"'`]*)[\"'`]"]
+    ],
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "css.validate": false,
+    "tailwindCSS.emmetCompletions": true,
+    "liveServer.settings.port": 5501
 }
