@@ -192,6 +192,82 @@
               DETAYLI BİLGİ
             </button>
 
+
+            <!-- Main navigation -->
+            <div class="max-w-[1400px] mx-auto">
+                <div class="flex justify-between items-center py-2">
+                    <!-- Desktop navigation links -->
+                    <div class="hidden lg:flex gap-10 items-center">
+                        <a
+                            href=""
+                            class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
+                            >KURUMSAL</a
+                        >
+                        <a
+                            href=""
+                            class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
+                            >FAALİYETLERİMİZ</a
+                        >
+                        <a
+                            href=""
+                            class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
+                            >İLETİŞİM</a
+                        >
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <button
+                        id="mobile-menu-btn"
+                        class="lg:hidden flex flex-col gap-1 p-2 z-20"
+                    >
+                        <span
+                            class="w-6 h-0.5 bg-white transition-all duration-300"
+                        ></span>
+                        <span
+                            class="w-6 h-0.5 bg-white transition-all duration-300"
+                        ></span>
+                        <span
+                            class="w-6 h-0.5 bg-white transition-all duration-300"
+                        ></span>
+                    </button>
+
+                    <!-- Desktop action buttons -->
+                    <div class="hidden md:flex gap-2">
+                        <a
+                            href="2.html"
+                            class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
+                        >
+                            <img
+                                src="img/heart.svg"
+                                class="w-7 border-r pr-2 border-[#4779CC] border-opacity-30 font-medium"
+                                alt=""
+                            />
+                            <p class="text-sm">BAĞIŞ YAP</p>
+                        </a>
+
+                        <button
+                            class="flex gap-2 justify-center items-center bg-[#4779CC] px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
+                        >
+                            <img
+                                src="img/person.svg"
+                                class="w-6 border-r pr-2 border-black border-opacity-30 font-medium"
+                                alt=""
+                            />
+                            <p class="text-sm">GÖNÜLLÜ OL</p>
+                        </button>
+                        <button
+                            class="flex gap-2 border-white border px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
+                        >
+                            <img src="img/sunshine.svg" class="w-8" alt="" />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile menu with smooth animations -->
+                <div
+                    id="mobile-menu"
+                    class="lg:hidden overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0 px-2"
+
             <!-- Carousel Controls -->
             <div
               class="flex items-center justify-center md:justify-start gap-4 mt-6"
@@ -206,6 +282,7 @@
                   stroke="currentColor"
                   stroke-width="2"
                   viewBox="0 0 24 24"
+
                 >
                   <path
                     stroke-linecap="round"
@@ -508,6 +585,7 @@
                           data-name="Group 126"
                           transform="translate(0.65 0.65)"
                         >
+
                           <g id="Group_125" data-name="Group 125">
                             <path
                               id="Path_25887"
@@ -582,6 +660,7 @@
                           </g>
                         </g>
                       </svg>
+
                     </div>
                     <span class="">GENEL</span>
                   </div>
