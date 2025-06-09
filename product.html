@@ -147,140 +147,167 @@
       </div>
     </nav>
     <main>
-     <section class="bg-[url('/img/herobg.png')] bg-cover bg-no-repeat bg-center py-12">
-  <div class="max-w-[1400px] mx-auto flex flex-col-reverse lg:flex-row items-start lg:items-center justify-between gap-10 w-full px-4">
-    <!-- Left: Donation Card -->
-    <div class="bg-white rounded-xl shadow-md p-6 space-y-4 w-full lg:flex-1">
-      <!-- Title -->
-      <h2 class="text-2xl font-bold text-blue-800">Burs</h2>
+      <section
+        class="bg-[url('/img/herobg.png')] bg-cover bg-no-repeat bg-center py-12"
+      >
+        <div
+          class="max-w-[1400px] mx-auto flex flex-col-reverse lg:flex-row items-start lg:items-center justify-between gap-10 w-full px-4"
+        >
+          <!-- Left: Donation Card -->
+          <div
+            class="bg-white rounded-xl shadow-md p-6 space-y-4 w-full lg:flex-1"
+          >
+            <!-- Title -->
+            <h2 class="text-2xl font-bold text-blue-800">Burs</h2>
 
-      <!-- Subtitle -->
-      <p class="text-gray-600 italic">
-        Afrika’daki Yetim Okullarına siz de destek olun. <br />
-        Kendilerinin ve ülkelerinin geleceklerini değiştirmelerinde destek olun.
-      </p>
+            <!-- Subtitle -->
+            <p class="text-gray-600 italic">
+              Afrika’daki Yetim Okullarına siz de destek olun. <br />
+              Kendilerinin ve ülkelerinin geleceklerini değiştirmelerinde destek
+              olun.
+            </p>
 
-      <hr class="my-2 border-blue-100 mt-10" />
+            <hr class="my-2 border-blue-100 mt-10" />
 
-     <!-- Amount selector -->
-                <div class="flex gap-2 items-center flex-col md:flex-row ">
-                  <div class="flex gap-2 mb-2 w-full mt-2 justify-center md:justify-start">
-                  <button
-                    class="w-16 h-16 rounded-full border border-[#A8BEE2] text-[var(--color-primary)] amount-item"
-                  >
-                    25TL
-                  </button>
-                  <button
-                    class="w-16 h-16 rounded-full border border-[#A8BEE2] text-[var(--color-primary)] amount-item"
-                  >
-                    50TL
-                  </button>
-                  <button
-                    class="w-16 h-16 rounded-full border border-[#A8BEE2] text-[var(--color-primary)] amount-item"
-                  >
-                    75TL
-                  </button>
-                  <button
-                    class="w-16 h-16 rounded-full border border-[#A8BEE2] text-[var(--color-primary)] amount-item"
-                  >
-                    100TL
-                  </button>
-                  
-                </div>
-                <input
-                    type="text"
-                    placeholder="Kendim Belirleyeceğim"
-                    class="w-full border px-3 py-2 h-12 rounded-lg border-[#A8BEE2] text-[var(--color-primary)]"
-                  />
-                </div>
-
-      <!-- Donation Type -->
-      <div
-                  class="flex flex-col md:flex-row justify-center gap-2 sm:gap-2 mb-4 text-sm text-gray-600 mt-4 items-center md:items-start"
+            <!-- Amount selector -->
+            <div class="flex gap-2 items-center flex-col md:flex-row">
+              <div
+                class="flex gap-2 mb-2 w-full mt-2 justify-center md:justify-start"
+              >
+                <button
+                  class="w-16 h-16 rounded-full border border-[#A8BEE2] text-[var(--color-primary)] amount-item"
                 >
-                  <label class="flex items-center gap-1">
-                    <input
-                      type="radio"
-                      name="burs-type"
-                      class="accent-[var(--color-secondary)]"
-                    />
-                    Tek Seferlik Bağış
-                  </label>
-                  <label class="flex items-center gap-1">
-                    <input
-                      type="radio"
-                      name="burs-type"
-                      class="accent-[var(--color-secondary)]"
-                    />
-                    Aylık Düzenli Bağış
-                  </label>
-                </div>
+                  25TL
+                </button>
+                <button
+                  class="w-16 h-16 rounded-full border border-[#A8BEE2] text-[var(--color-primary)] amount-item"
+                >
+                  50TL
+                </button>
+                <button
+                  class="w-16 h-16 rounded-full border border-[#A8BEE2] text-[var(--color-primary)] amount-item"
+                >
+                  75TL
+                </button>
+                <button
+                  class="w-16 h-16 rounded-full border border-[#A8BEE2] text-[var(--color-primary)] amount-item"
+                >
+                  100TL
+                </button>
+              </div>
+              <input
+                type="text"
+                placeholder="Kendim Belirleyeceğim"
+                class="w-full border px-3 py-2 h-12 rounded-lg border-[#A8BEE2] text-[var(--color-primary)]"
+              />
+            </div>
 
-      <!-- Action Buttons -->
-      <div class="flex gap-2 mt-4 flex-col items-center md:items-start sm:flex-row justify-center">
-        <a href="checkout.html">
-            <button
-          class="w-48 h-14 px-2 bg-[var(--color-secondary)] hover:bg-orange-500 text-white font-semibold py-2 rounded-lg flex items-center justify-center gap-2 transition"
-        >
-          <img src="img/heart.svg" alt="" class="border-r pr-2 border-[#D58300]">
-          HIZLI BAĞIŞ YAP
-        </button>
-        </a>
-        <button
-          class="w-48 h-14 px-2 border-2 border-blue-500 text-blue-600 font-semibold py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-blue-50 transition"
-        >
-          <img src="img/Group 89.png" alt="" class="border-r pr-2 border-[#FFAE2C]">
-          SEPETE EKLE
-        </button>
-      </div>
-    </div>
+            <!-- Donation Type -->
+            <div
+              class="flex flex-col md:flex-row justify-center gap-2 sm:gap-2 mb-4 text-sm text-gray-600 mt-4 items-center md:items-start"
+            >
+              <label class="flex items-center gap-1">
+                <input
+                  type="radio"
+                  name="burs-type"
+                  class="accent-[var(--color-secondary)]"
+                />
+                Tek Seferlik Bağış
+              </label>
+              <label class="flex items-center gap-1">
+                <input
+                  type="radio"
+                  name="burs-type"
+                  class="accent-[var(--color-secondary)]"
+                />
+                Aylık Düzenli Bağış
+              </label>
+            </div>
 
-    <!-- Right: Image -->
-    <div class="relative flex justify-center w-full lg:flex-1 mt-4 lg:mt-0">
-        <div class="mt-8 relative flex justify-center">
-            <!-- Decorative Stripe Behind -->
-          <div class="absolute right-[-60px] top-1/3 transform -translate-y-1/2 z-10 hidden md:block">
-            <img src="/img/Group 62.png" alt="Stripes" class="w-52 h-52 object-contain" />
+            <!-- Action Buttons -->
+            <div
+              class="flex gap-2 mt-4 flex-col items-center md:items-start sm:flex-row justify-center"
+            >
+              <a href="checkout.html">
+                <button
+                  class="w-48 h-14 px-2 bg-[var(--color-secondary)] hover:bg-orange-500 text-white font-semibold py-2 rounded-lg flex items-center justify-center gap-2 transition"
+                >
+                  <img
+                    src="img/heart.svg"
+                    alt=""
+                    class="border-r pr-2 border-[#D58300]"
+                  />
+                  HIZLI BAĞIŞ YAP
+                </button>
+              </a>
+              <button
+                class="w-48 h-14 px-2 border-2 border-blue-500 text-blue-600 font-semibold py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-blue-50 transition"
+              >
+                <img
+                  src="img/Group 89.png"
+                  alt=""
+                  class="border-r pr-2 border-[#FFAE2C]"
+                />
+                SEPETE EKLE
+              </button>
+            </div>
           </div>
 
-            <!-- Circular Image Container -->
-          <div class="md:w-[500px] md:h-[500px] overflow-hidden relative z-20">
-            <img
-              src="/img/product.png"
-              alt="Donation"
-              class="w-full h-full object-cover"
-            />
+          <!-- Right: Image -->
+          <div
+            class="relative flex justify-center w-full lg:flex-1 mt-4 lg:mt-0"
+          >
+            <div class="mt-8 relative flex justify-center">
+              <!-- Decorative Stripe Behind -->
+              <div
+                class="absolute right-[-60px] top-1/3 transform -translate-y-1/2 z-10 hidden md:block"
+              >
+                <img
+                  src="/img/Group 62.png"
+                  alt="Stripes"
+                  class="w-52 h-52 object-contain"
+                />
+              </div>
+
+              <!-- Circular Image Container -->
+              <div
+                class="md:w-[500px] md:h-[500px] overflow-hidden relative z-20"
+              >
+                <img
+                  src="/img/product.png"
+                  alt="Donation"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
-      </div>
-    </div>
-  </div>
+        </div>
 
-  <!-- Optional: Add description section under the image -->
-  <div class="max-w-[1400px] mx-auto px-4 mt-10 text-center lg:text-left">
-    <p class="text-[var(--color-primary)]">
-      70 yıllık komünizm zulmünden kurtularak ülkemize gelen misafir
-      öğrencilere en iyi ev sahipliği yapan İhlas Vakfı, ülkemizin yüz akıdır.
-      Eğitime ve devletimize verdiği hizmet ve destek ile en iyi şekilde kamu
-      hizmeti yapmaktadır. Dünya tarihinde vakıf medeniyetini kuran
-      dedelerimizin torunu olarak vakıfları, hayır kurumlarını ve ilim
-      yuvalarını kurban vekaleti vererek veya başka şekilde desteklemek,
-      bilgili, kültürlü öğrencilerin yetişmesine katkıda bulunmak milli ve dini
-      bir vazifedir.
-    </p>
-  </div>
-</section>
+        <!-- Optional: Add description section under the image -->
+        <div class="max-w-[1400px] mx-auto px-4 mt-10 text-center lg:text-left">
+          <p class="text-[var(--color-primary)]">
+            70 yıllık komünizm zulmünden kurtularak ülkemize gelen misafir
+            öğrencilere en iyi ev sahipliği yapan İhlas Vakfı, ülkemizin yüz
+            akıdır. Eğitime ve devletimize verdiği hizmet ve destek ile en iyi
+            şekilde kamu hizmeti yapmaktadır. Dünya tarihinde vakıf medeniyetini
+            kuran dedelerimizin torunu olarak vakıfları, hayır kurumlarını ve
+            ilim yuvalarını kurban vekaleti vererek veya başka şekilde
+            desteklemek, bilgili, kültürlü öğrencilerin yetişmesine katkıda
+            bulunmak milli ve dini bir vazifedir.
+          </p>
+        </div>
+      </section>
 
-<!-- Tailwind Component Styling -->
-<style>
-  .amount-btn {
-    @apply px-4 py-2 border border-blue-300 rounded-md text-blue-700 bg-white hover:bg-blue-50 transition;
-  }
+      <!-- Tailwind Component Styling -->
+      <style>
+        .amount-btn {
+          @apply px-4 py-2 border border-blue-300 rounded-md text-blue-700 bg-white hover:bg-blue-50 transition;
+        }
 
-  .amount-input {
-    @apply px-3 py-2 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 text-sm;
-  }
-</style>
-
+        .amount-input {
+          @apply px-3 py-2 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 text-sm;
+        }
+      </style>
     </main>
     <footer class="bg-[#003E92] text-white py-12">
       <div class="max-w-[1280px] mx-auto px-4">
