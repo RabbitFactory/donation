@@ -148,7 +148,7 @@
     </nav>
     <main>
      <section class="bg-[url('/img/herobg.png')] bg-cover bg-no-repeat bg-center py-12">
-  <div class="max-w-[1400px] mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 w-full px-4">
+  <div class="max-w-[1400px] mx-auto flex flex-col-reverse lg:flex-row items-start lg:items-center justify-between gap-10 w-full px-4">
     <!-- Left: Donation Card -->
     <div class="bg-white rounded-xl shadow-md p-6 space-y-4 w-full lg:flex-1">
       <!-- Title -->
@@ -163,8 +163,8 @@
       <hr class="my-2 border-blue-100 mt-10" />
 
      <!-- Amount selector -->
-                <div class="flex gap-2 items-center">
-                  <div class="flex gap-2 mb-2 w-full mt-2">
+                <div class="flex gap-2 items-center flex-col md:flex-row ">
+                  <div class="flex gap-2 mb-2 w-full mt-2 justify-center md:justify-start">
                   <button
                     class="w-16 h-16 rounded-full border border-[#A8BEE2] text-[var(--color-primary)] amount-item"
                   >
@@ -196,7 +196,7 @@
 
       <!-- Donation Type -->
       <div
-                  class="flex flex-col md:flex-row justify-center gap-2 sm:gap-2 mb-4 text-sm text-gray-600 mt-4"
+                  class="flex flex-col md:flex-row justify-center gap-2 sm:gap-2 mb-4 text-sm text-gray-600 mt-4 items-center md:items-start"
                 >
                   <label class="flex items-center gap-1">
                     <input
@@ -217,7 +217,7 @@
                 </div>
 
       <!-- Action Buttons -->
-      <div class="flex gap-2 mt-4 flex-col sm:flex-row justify-center">
+      <div class="flex gap-2 mt-4 flex-col items-center md:items-start sm:flex-row justify-center">
         <a href="checkout.html">
             <button
           class="w-48 h-14 px-2 bg-[var(--color-secondary)] hover:bg-orange-500 text-white font-semibold py-2 rounded-lg flex items-center justify-center gap-2 transition"
@@ -244,7 +244,7 @@
           </div>
 
             <!-- Circular Image Container -->
-          <div class="w-[500px] h-[500px] overflow-hidden relative z-20">
+          <div class="md:w-[500px] md:h-[500px] overflow-hidden relative z-20">
             <img
               src="/img/product.png"
               alt="Donation"
