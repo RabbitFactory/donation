@@ -50,3 +50,7 @@
 .category-item:hover {
   transform: scale(1.1);
 }
+
+.amount-item.amount-selected {
+  background-color: #EDF5FF;
+}
