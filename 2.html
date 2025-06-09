@@ -1697,7 +1697,7 @@
 
       <!-- 3 cards section -->
       <section class="py-12 bg-white">
-        <div class="max-w-[1280px] mx-auto px-4 text-center">
+        <div class="max-w-[14000px] mx-auto px-4 text-center">
           <!-- Section Header -->
           <h3 class="text-lg text-yellow-500 font-semibold mb-2">
             Birlikte yüzleri güldürelim
@@ -1707,7 +1707,8 @@
           </h2>
 
           <!-- Carousel Container -->
-          <div
+          <div id="carousel"
+
             class="flex space-x-6 overflow-x-auto scrollbar-hide justify-center"
           >
             <!-- Card Start -->
@@ -1742,6 +1743,37 @@
               </button>
             </div>
             <!-- Repeat the card as needed -->
+            <div
+              class="bg-white rounded-xl shadow-lg p-6 w-[300px] flex-shrink-0"
+            >
+              <p class="text-sm text-yellow-500 font-semibold">Afrika</p>
+              <h3 class="text-xl font-bold text-blue-900 my-1">Cami İnşaatı</h3>
+              <p class="text-sm text-gray-600 mb-4">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s...
+              </p>
+
+              <!-- Progress Bar -->
+              <div class="mb-2">
+                <div class="flex justify-between text-sm text-gray-600 mb-1">
+                  <span>%18</span>
+                </div>
+                <div class="w-full bg-gray-200 h-1 rounded">
+                  <div class="bg-orange-400 h-1 rounded w-[18%]"></div>
+                </div>
+              </div>
+
+              <p class="text-sm text-gray-600 mb-4">
+                1568 kişi bu projeyi destekledi.
+              </p>
+
+              <button
+                class="bg-white text-blue-700 border border-blue-600 hover:bg-blue-600 hover:text-white px-4 py-2 rounded transition"
+              >
+                DESTEK OL
+              </button>
+            </div>
+            <!-- Add more cards as needed -->
             <div
               class="bg-white rounded-xl shadow-lg p-6 w-[300px] flex-shrink-0"
             >
@@ -2081,5 +2113,94 @@
       </div>
     </footer>
     <script src="stateSelection.js"></script>
+    <script>
+            const carousel = document.getElementById("carousel");
+            const dots = document.querySelectorAll(".dot");
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+
+            let currentIndex = 0;
+            const totalSlides = carousel.children.length;
+
+            function updateCarousel(index) {
+                carousel.style.transform = `translateX(-${index * 100}%)`;
+
+                dots.forEach((dot, i) => {
+                    dot.classList.remove("w-10", "bg-[#003E92]");
+                    dot.classList.add("w-6", "bg-[#6b91bc]");
+                    if (i === index) {
+                        dot.classList.add("w-10", "bg-[#003E92]");
+                        dot.classList.remove("w-6", "bg-[#6b91bc]");
+                    }
+                });
+            }
+
+            prevBtn.addEventListener("click", () => {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateCarousel(currentIndex);
+            });
+
+            nextBtn.addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel(currentIndex);
+            });
+
+            dots.forEach((dot, i) => {
+                dot.addEventListener("click", () => {
+                    currentIndex = i;
+                    updateCarousel(currentIndex);
+                });
+            });
+
+            updateCarousel(currentIndex); // Initial state
+
+            const slides = carousel.children;
+
+            const progressBar = document.getElementById("progressBar");
+
+            function goToSlide(index) {
+                carousel.style.transform = `translateX(-${index * 100}%)`;
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel(currentIndex);
+                goToSlide(currentIndex);
+            }
+
+            function startProgress() {
+                progressBar.style.transition = "none";
+                progressBar.style.width = "0%";
+
+                // trigger reflow
+                void progressBar.offsetWidth;
+
+                progressBar.style.transition = "width 3s linear";
+                progressBar.style.width = "100%";
+
+                setTimeout(() => {
+                    nextSlide();
+                    startProgress();
+                }, 3000);
+            }
+
+            // Start autoplay
+            startProgress();
+
+            // Manual navigation support
+            document.getElementById("prevBtn").addEventListener("click", () => {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                goToSlide(currentIndex);
+                startProgress();
+            });
+
+            document.getElementById("nextBtn").addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                goToSlide(currentIndex);
+                startProgress();
+            });
+        </script>
+        <script src="navbarFunc.js"></script>
+        <script src="carousel.js" defer></script>
   </body>
 </html>
