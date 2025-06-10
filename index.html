@@ -1699,7 +1699,9 @@
                     <h3 class="text-3xl text-[#FF9D00] font-medium mb-2">
                         Birlikte yüzleri güldürelim
                     </h3>
-                    <h2 class="text-5xl font-bold text-[#003E92] mb-8">
+                    <h2
+                        class="text-2xl md:text-5xl font-bold text-[#003E92] mb-8"
+                    >
                         Siz de Destek Olun
                     </h2>
                     <!-- Carousel Container -->
@@ -2029,7 +2031,7 @@
             </section>
 
             <!-- 3 cards section again -->
-            <section class="py-10 px-4 bg-white text-center">
+            <section class="py-10 px-4 bg-[#F4F4F4] text-center">
                 <div
                     class="max-w-[1400px] p-1 mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-3"
                 >
@@ -2131,7 +2133,7 @@
                 <div class="mt-10 w-full flex justify-center">
                     <a href="/blog.html" target="_blank">
                         <button
-                            class="p-3 border border-[#A8BEE2] hover:bg-[#EDF5FF] transition rounded-xl flex justify-center text-[#003E92] px-4 py-5"
+                            class="p-3 border border-[#A8BEE2] hover:bg-[#EDF5FF] transition rounded-xl flex justify-center text-[#003E92] px-4 py-5 hover:-translate-y-2 hover:shadow-lg"
                         >
                             TÜM HABERLERİ GÖR
                         </button>
@@ -2140,18 +2142,23 @@
             </section>
 
             <!-- blurry image card section -->
-            <section class="py-10 px-4 bg-white">
-                <div class="max-w-[1280px] mx-auto">
+            <section class="py-16 px-4 bg-white">
+                <div class="max-w-[1440px] mx-auto p-1">
                     <!-- Section Heading -->
                     <div class="text-center mb-10">
-                        <p class="text-lg text-blue-600 font-medium">Yardım</p>
-                        <p class="text-3xl font-bold text-gray-800">
+                        <p class="text-3xl text-[#FF9D00] font-medium">
+                            Yardım
+                        </p>
+                        <p
+                            class="text-2xl md:text-[41px] font-bold text-[#003E92]"
+                        >
                             Kampanyalarımız
                         </p>
                     </div>
 
                     <!-- Campaign Cards Grid -->
                     <div
+                        id="carousel"
                         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
                     >
                         <!-- Card -->
@@ -2159,146 +2166,147 @@
                             class="relative group overflow-hidden rounded-xl shadow-lg"
                         >
                             <img
-                                src="img/cow.png"
+                                src="./img/cow.png"
                                 alt="Cow"
-                                class="w-full h-60 object-cover"
+                                class="w-full h-96 object-cover"
                             />
                             <div
-                                class="absolute bottom-10 left-0 w-full backdrop-blur-sm text-white px-4 py-4"
+                                class="absolute bottom-10 left-0 w-full backdrop-blur-sm text-white px-5 pt-9 pb-16"
                             >
-                                <p class="text-sm font-semibold">
+                                <p class="text-2xl font-semibold">
                                     İhtiyaç Sahiplerine
                                 </p>
-                                <p class="text-xs">Yurtiçi</p>
+                                <p class="text-xl font-light">Yurtiçi</p>
                             </div>
 
                             <div
                                 class="absolute bottom-0 left-0 w-full flex items-center justify-between bg-[var(--color-primary)]"
                             >
                                 <p
-                                    class="text-xl font-medium text-[var(--color-secondary)] px-4"
+                                    class="text-2xl font-semibold text-[var(--color-secondary)] px-5 py-5"
                                 >
                                     Kurban
                                 </p>
                                 <div
-                                    class="bg-[var(--color-secondary)] h-full py-2 px-2"
+                                    class="bg-[var(--color-secondary)] h-full py-4 px-4"
                                 >
                                     <img
-                                        src="img/ico1.png"
+                                        src="./img/ico1.png"
                                         alt="icon"
-                                        class="w-6 h-6"
+                                        class="w-10 h-10"
                                     />
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Duplicate Cards -->
+                        <!-- Card -->
                         <div
                             class="relative group overflow-hidden rounded-xl shadow-lg"
                         >
                             <img
-                                src="img/card2.png"
+                                src="./img/card2.png"
                                 alt="Cow"
-                                class="w-full h-60 object-cover"
+                                class="w-full h-96 object-cover"
                             />
                             <div
-                                class="absolute bottom-10 left-0 w-full backdrop-blur-sm text-white px-4 py-4"
+                                class="absolute bottom-10 left-0 w-full backdrop-blur-sm text-white px-5 pt-9 pb-16"
                             >
-                                <p class="text-sm font-semibold">
-                                    İhtiyaç Sahiplerine
+                                <p class="text-2xl font-semibold">
+                                    Kitap Dağıtımı
                                 </p>
-                                <p class="text-xs">Yurtiçi</p>
+                                <p class="text-xl font-light">
+                                    Yurtiçi&Yurtdışı
+                                </p>
                             </div>
 
                             <div
                                 class="absolute bottom-0 left-0 w-full flex items-center justify-between bg-[var(--color-primary)]"
                             >
                                 <p
-                                    class="text-xl font-medium text-[var(--color-secondary)] px-4"
+                                    class="text-2xl font-semibold text-[var(--color-secondary)] px-5 py-5"
                                 >
                                     Genel Bağış
                                 </p>
                                 <div
-                                    class="bg-[var(--color-secondary)] h-full py-2 px-2"
+                                    class="bg-[var(--color-secondary)] h-full py-4 px-4"
                                 >
                                     <img
-                                        src="img/btn3.png"
+                                        src="./img/az.png"
                                         alt="icon"
-                                        class="w-6 h-6"
+                                        class="w-10 h-10"
                                     />
                                 </div>
                             </div>
                         </div>
-
+                        <!-- Card -->
                         <div
                             class="relative group overflow-hidden rounded-xl shadow-lg"
                         >
                             <img
-                                src="img/card3.png"
+                                src="./img/card3.png"
                                 alt="Cow"
-                                class="w-full h-60 object-cover"
+                                class="w-full h-96 object-cover"
                             />
                             <div
-                                class="absolute bottom-10 left-0 w-full backdrop-blur-sm text-white px-4 py-4"
+                                class="absolute bottom-10 left-0 w-full backdrop-blur-sm text-white px-5 pt-9 pb-16"
                             >
-                                <p class="text-sm font-semibold">
-                                    İhtiyaç Sahiplerine
+                                <p class="text-2xl font-semibold">
+                                    Sudan Afrika
                                 </p>
-                                <p class="text-xs">Yurtiçi</p>
+                                <p class="text-xl font-light">Su Kuyusu</p>
                             </div>
 
                             <div
                                 class="absolute bottom-0 left-0 w-full flex items-center justify-between bg-[var(--color-primary)]"
                             >
                                 <p
-                                    class="text-xl font-medium text-[var(--color-secondary)] px-4"
+                                    class="text-2xl font-semibold text-[var(--color-secondary)] px-5 py-5"
                                 >
                                     Su Kuyusu
                                 </p>
                                 <div
-                                    class="bg-[var(--color-secondary)] h-full py-2 px-2"
+                                    class="bg-[var(--color-secondary)] h-full py-4 px-4"
                                 >
                                     <img
-                                        src="img/ico3.png"
+                                        src="./img/ico3.png"
                                         alt="icon"
-                                        class="w-6 h-6"
+                                        class="w-10 h-10"
                                     />
                                 </div>
                             </div>
                         </div>
-
+                        <!-- Card -->
                         <div
                             class="relative group overflow-hidden rounded-xl shadow-lg"
                         >
                             <img
-                                src="img/cardlast.png"
+                                src="./img/cardlast.png"
                                 alt="Cow"
-                                class="w-full h-60 object-cover"
+                                class="w-full h-96 object-cover"
                             />
                             <div
-                                class="absolute bottom-10 left-0 w-full backdrop-blur-sm text-white px-4 py-4"
+                                class="absolute bottom-10 left-0 w-full backdrop-blur-sm text-white px-5 pt-9 pb-16"
                             >
-                                <p class="text-sm font-semibold">
+                                <p class="text-2xl font-semibold">
                                     İhtiyaç Sahiplerine
                                 </p>
-                                <p class="text-xs">Yurtiçi</p>
+                                <p class="text-xl font-light">Yurtiçi</p>
                             </div>
 
                             <div
                                 class="absolute bottom-0 left-0 w-full flex items-center justify-between bg-[var(--color-primary)]"
                             >
                                 <p
-                                    class="text-xl font-medium text-[var(--color-secondary)] px-4"
+                                    class="text-2xl font-semibold text-[var(--color-secondary)] px-5 py-5"
                                 >
                                     Zekat
                                 </p>
                                 <div
-                                    class="bg-[var(--color-secondary)] h-full py-2 px-2"
+                                    class="bg-[var(--color-secondary)] h-full py-4 px-4"
                                 >
                                     <img
-                                        src="img/ico5.png"
+                                        src="./img/ico5.png"
                                         alt="icon"
-                                        class="w-6 h-6"
+                                        class="w-10 h-10"
                                     />
                                 </div>
                             </div>
@@ -2310,25 +2318,22 @@
             <!-- last section -->
             <section class="py-10">
                 <div
-                    class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 gap-6"
+                    class="max-w-[1400px] mx-auto px-1 grid grid-cols-1 sm:grid-cols-2 gap-6"
                 >
                     <!-- Card 1 -->
-                    <div class="relative rounded-lg shadow-md">
-                        <img
-                            src="img/bottomimg(2).png"
-                            alt="Gıda Bankacılığı"
-                            class="w-full h-64 object-cover"
-                        />
+                    <div
+                        class="relative rounded-lg shadow-md bg-[url('./img/bottomimg(2).png')] bg-cover bg-center min-h-96"
+                    >
                         <div
-                            class="absolute flex flex-col justify-end p-4 right-0 lg:right-10 top-28"
+                            class="absolute flex flex-col justify-end p-4 right-0 lg:right-10 bottom-9 lg:bottom-10"
                         >
                             <p
-                                class="text-lg font-semibold text-[var(--color-secondary)]"
+                                class="text-2xl font-light text-[var(--color-secondary)]"
                             >
                                 Gıda
                             </p>
                             <p
-                                class="text-2xl mb-2 text-[var(--color-primary)]"
+                                class="text-4xl font-medium mb-7 text-[var(--color-primary)]"
                             >
                                 Bankacılığı
                             </p>
@@ -2341,21 +2346,20 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="relative rounded-lg shadow-md">
-                        <img
-                            src="img/bottomimg(1).png"
-                            alt="Gıda Bankacılığı"
-                            class="w-full h-64 object-cover"
-                        />
+                    <div
+                        class="relative rounded-lg shadow-md bg-[url('./img/bottomimg(1).png')] bg-cover bg-center min-h-96"
+                    >
                         <div
-                            class="absolute flex flex-col justify-end p-4 top-0"
+                            class="absolute flex flex-col justify-end p-2 md:p-9 top-0"
                         >
                             <p
-                                class="text-lg font-semibold text-[var(--color-secondary)]"
+                                class="text-2xl font-light text-[var(--color-secondary)]"
                             >
                                 Yardımlarınızı dünyanın dört bir yanına
                             </p>
-                            <p class="text-sm mb-2 text-[var(--color-primary)]">
+                            <p
+                                class="text-4xl font-medium mb-7 text-[var(--color-primary)]"
+                            >
                                 Ulaştırıyoruz
                             </p>
                             <button
@@ -2370,28 +2374,28 @@
         </main>
 
         <footer class="bg-[#003E92] text-white py-12">
-            <div class="max-w-[1280px] mx-auto px-4">
+            <div class="max-w-[1400px] mx-auto px-4">
                 <!-- Newsletter -->
                 <div class="text-center mb-12">
-                    <p class="text-orange-400 text-xl mb-2">
+                    <p class="text-[#FF9D00] text-2xl mb-2">
                         Güncel Bilgilerden
                     </p>
                     <h3 class="text-3xl sm:text-4xl mb-6">Haberdar Olun</h3>
                     <div
-                        class="flex flex-col sm:flex-row gap-2 justify-center items-center max-w-lg mx-auto"
+                        class="flex flex-col sm:flex-row gap-2 justify-center items-center max-w-[750px] mx-auto"
                     >
                         <input
                             type="text"
                             placeholder="Ad, Soyad"
-                            class="w-full sm:w-auto flex-1 px-4 py-2 rounded bg-transparent border border-white/30 text-white placeholder-white/70"
+                            class="w-full sm:w-auto text-sm flex-1 px-4 py-4 rounded bg-transparent border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[var(--color-secondary)] focus:ring-1 focus:ring-[var(--color-secondary)]"
                         />
                         <input
                             type="email"
                             placeholder="Mail"
-                            class="w-full sm:w-auto flex-1 px-4 py-2 rounded bg-transparent border border-white/30 text-white placeholder-white/70"
+                            class="w-full sm:w-auto text-sm flex-1 px-4 py-4 rounded bg-transparent border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[var(--color-secondary)] focus:ring-1 focus:ring-[var(--color-secondary)]"
                         />
                         <button
-                            class="bg-[var(--color-secondary)] hover:bg-orange-600 px-6 py-2 rounded text-white font-medium transition-colors whitespace-nowrap"
+                            class="bg-[var(--color-secondary)] hover:bg-orange-600 px-8 py-4.5 rounded text-white font-medium transition-colors whitespace-nowrap text-sm"
                         >
                             ABONE OL
                         </button>
