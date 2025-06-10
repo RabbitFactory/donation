@@ -330,32 +330,34 @@
         <footer class="bg-[#003E92] text-white py-12">
             <div class="max-w-[1400px] mx-auto px-4">
                 <!-- Newsletter -->
-                <div class="text-center mb-12">
-                    <p class="text-orange-400 text-xl mb-2">
+                <div class="text-center">
+                    <p class="text-[#FF9D00] text-2xl mb-2">
                         Güncel Bilgilerden
                     </p>
                     <h3 class="text-3xl sm:text-4xl mb-6">Haberdar Olun</h3>
                     <div
-                        class="flex flex-col sm:flex-row gap-2 justify-center items-center max-w-lg mx-auto"
+                        class="flex flex-col sm:flex-row gap-2 justify-center items-center max-w-[750px] mx-auto"
                     >
                         <input
                             type="text"
                             placeholder="Ad, Soyad"
-                            class="w-full sm:w-auto flex-1 px-4 py-2 rounded bg-transparent border border-white/30 text-white placeholder-white/70"
+                            class="w-full sm:w-auto text-sm font-medium flex-1 px-4 py-4 rounded bg-transparent border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[var(--color-secondary)] focus:ring-1 focus:ring-[var(--color-secondary)]"
                         />
                         <input
                             type="email"
                             placeholder="Mail"
-                            class="w-full sm:w-auto flex-1 px-4 py-2 rounded bg-transparent border border-white/30 text-white placeholder-white/70"
+                            class="w-full sm:w-auto text-sm font-medium flex-1 px-4 py-4 rounded bg-transparent border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-[var(--color-secondary)] focus:ring-1 focus:ring-[var(--color-secondary)]"
                         />
                         <button
-                            class="bg-[var(--color-secondary)] hover:bg-orange-600 px-6 py-2 rounded text-white font-medium transition-colors whitespace-nowrap"
+                            class="bg-[var(--color-secondary)] hover:bg-orange-600 px-8 py-4.5 rounded text-white font-medium transition-colors whitespace-nowrap text-sm"
                         >
                             ABONE OL
                         </button>
                     </div>
                     <!-- Social Icons -->
-                    <div class="flex justify-center gap-4 mt-6">
+                    <div
+                        class="flex justify-center gap-4 mt-6 relative top-5 bg-[var(--color-primary)] p-2 w-60 mx-auto"
+                    >
                         <a
                             href="#"
                             class="w-8 h-8 flex items-center justify-center hover:bg-white/30 transition-colors rounded-full border border-white"
@@ -389,10 +391,10 @@
 
                 <!-- Main Grid Content -->
                 <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 border-t border-white/20 pt-8 pb-4 border-b-2 text-sm"
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 border-t border-white/20 pt-12 pb-4 border-b-2 text-sm"
                 >
                     <!-- Logo -->
-                    <div class="lg:col-span-1">
+                    <div class="">
                         <img
                             src="img/footer_logo.svg"
                             alt="Atlas Vakfı"
@@ -402,8 +404,8 @@
 
                     <!-- Bağış -->
                     <div>
-                        <h3 class="mb-3 font-semibold">Bağış</h3>
-                        <ul class="space-y-1">
+                        <h3 class="mb-3 font-medium uppercase">Bağış</h3>
+                        <ul class="space-y-1 uppercase font-light">
                             <li>Online Bağış</li>
                             <li>Güvenlik Uyarıları</li>
                             <li>Bağış Nasıl Yapılır</li>
@@ -414,8 +416,8 @@
 
                     <!-- Kurumsal -->
                     <div>
-                        <h3 class="mb-3 font-semibold">Kurumsal</h3>
-                        <ul class="space-y-1">
+                        <h3 class="mb-3 font-medium uppercase">Kurumsal</h3>
+                        <ul class="space-y-1 uppercase font-light">
                             <li>
                                 <a href="#" class="hover:text-orange-400"
                                     >Vakfımız Hakkında</a
@@ -456,8 +458,10 @@
 
                     <!-- Faaliyetler -->
                     <div>
-                        <h3 class="mb-3 font-semibold">Faaliyetlerimiz</h3>
-                        <ul class="space-y-1">
+                        <h3 class="mb-3 font-medium uppercase">
+                            Faaliyetlerimiz
+                        </h3>
+                        <ul class="space-y-1 uppercase font-light">
                             <li>
                                 <a href="#" class="hover:text-orange-400"
                                     >Kız Eğitim Kampüsü</a
@@ -503,11 +507,11 @@
 
                     <!-- İletişim -->
                     <div>
-                        <h3 class="mb-3 font-semibold">
+                        <h3 class="mb-3 font-medium uppercase">
                             İhlas Vakfı Genel Merkez
                         </h3>
-                        <div class="space-y-2">
-                            <p class="flex gap-2">
+                        <div class="space-y-2 font-light">
+                            <p class="flex gap-2 mb-4">
                                 <img
                                     src="img/location.svg"
                                     alt=""
@@ -534,7 +538,7 @@
                             </div>
                             <div class="flex gap-2 items-center mt-2">
                                 <img src="img/wp.svg" alt="" class="w-10" />
-                                <div class="text-xl">
+                                <div class="text-xl font-medium mt-4">
                                     <p>WHATSAPP</p>
                                     <p>Destek Hattı</p>
                                 </div>
@@ -569,7 +573,7 @@
                 <div
                     class="flex flex-col md:flex-row justify-between items-start md:items-center mt-8 text-sm gap-4"
                 >
-                    <div class="text-[#A8BEE2]">
+                    <div class="text-[#4779CC]">
                         <p>
                             <span class="font-semibold text-white"
                                 >İhlas Vakfı</span
@@ -581,8 +585,9 @@
                             Kurulu Kararı ile Vergi Muafiyetine Sahiptir.
                         </p>
                     </div>
-                    <div>
+                    <div class="text-[#4779CC] text-center flex gap-1">
                         <p>Designed By</p>
+                        <p class="font-bold">Vixingo</p>
                     </div>
                 </div>
             </div>
