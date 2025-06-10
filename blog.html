@@ -1,461 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <nav class="bg-[var(--color-primary)] text-white relative">
-      <div
-        class="hidden lg:flex justify-between border-b-2 border-[#4779CC] max-w-[1280px] mx-auto px-4"
-      >
-        <div class="flex gap-4 text-sm py-2">
-          <p class="flex gap-2">
-            <img src="img/phone.svg" alt="" />+90 212 451 49 00
-          </p>
-          <p class="flex gap-2">
-            <img src="img/email.svg" alt="" />ihlasvakfi@ihlasvakfi.org.tr
-          </p>
-        </div>
-        <div class="text-sm py-2 flex gap-2">
-          <img src="img/card.svg" alt="" />BANKA HESAP NUMARALARIMIZ.
-        </div>
-      </div>
-
-      <!-- Main navigation -->
-      <div class="max-w-[1280px] mx-auto px-4">
-        <div class="flex justify-between items-center py-4">
-          <!-- Desktop navigation links -->
-          <div class="hidden lg:flex gap-10 items-center">
-            <a href="" class="hover:text-[#4779CC] transition-colors"
-              >KURUMSAL</a
-            >
-            <a href="" class="hover:text-[#4779CC] transition-colors"
-              >FAALİYETLERİMİZ</a
-            >
-            <a href="" class="hover:text-[#4779CC] transition-colors"
-              >İLETİŞİM</a
-            >
-          </div>
-
-          <!-- Mobile menu button -->
-          <button
-            id="mobile-menu-btn"
-            class="lg:hidden flex flex-col gap-1 p-2 z-20"
-          >
-            <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
-            <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
-            <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
-          </button>
-
-          <!-- Desktop action buttons -->
-          <div class="hidden md:flex gap-2">
-            <a
-              href="2.html"
-              class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] p-3 rounded-xl"
-            >
-              <img
-                src="img/heart.svg"
-                class="w-7 border-r pr-2 border-[#4779CC]"
-                alt=""
-              />
-              BAĞIŞ YAP
-            </a>
-
-            <button
-              class="flex gap-2 justify-center items-center bg-[#4779CC] p-3 rounded-xl"
-            >
-              <img
-                src="img/person.svg"
-                class="w-6 border-r pr-2 border-black"
-                alt=""
-              />GÖNÜLLÜ OL
-            </button>
-            <button class="flex gap-2 border-white border p-3 rounded-xl">
-              <img src="img/sunshine.svg" class="w-8" alt="" />
-            </button>
-          </div>
-        </div>
-
-        <!-- Mobile menu with smooth animations -->
-        <div
-          id="mobile-menu"
-          class="lg:hidden overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0"
-        >
-          <div class="flex flex-col gap-4 pb-4">
-            <a
-              href=""
-              class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300"
-              >KURUMSAL</a
-            >
-            <a
-              href=""
-              class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300 delay-75"
-              >FAALİYETLERİMİZ</a
-            >
-            <a
-              href=""
-              class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300 delay-150"
-              >İLETİŞİM</a
-            >
-            <div class="flex w-full justify-between">
-              <button
-                class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] p-3 rounded-xl"
-              >
-                <img src="img/heart.svg" class="w-7" alt="" />BAĞIŞ YAP
-              </button>
-              <button
-                class="flex gap-2 justify-center items-center bg-[#4779CC] p-3 rounded-xl"
-              >
-                <img src="img/person.svg" class="w-5" alt="" />GÖNÜLLÜ OL
-              </button>
-              <button class="flex gap-2 border-white border p-3 rounded-xl">
-                <img src="img/sunshine.svg" class="w-8" alt="" />
-              </button>
-            </div>
-            <!-- Mobile contact info -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <nav class="bg-[var(--color-primary)] text-white relative z-50">
             <div
-              class="flex flex-col gap-2 mt-4 pt-4 border-t border-[#4779CC] text-sm transform translate-y-2 opacity-0 transition-all duration-300 delay-300"
+                class="hidden lg:flex justify-between border-b-1 border-[#4779CC] max-w-[1400px] mx-auto"
             >
-              <p class="flex gap-2">
-                <img src="img/phone.svg" alt="" />+90 212 451 49 00
-              </p>
-              <p class="flex gap-2">
-                <img src="img/email.svg" alt="" />ihlasvakfi@ihlasvakfi.org.tr
-              </p>
-              <div class="text-sm py-2 flex gap-2">
-                <img src="img/card.svg" alt="" />BANKA HESAP NUMARALARIMIZ.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Desktop Logo -->
-      <div
-        class="absolute -top-2 left-[50%] -translate-x-[50%] bg-white rounded-xl p-4 pt-7 hidden lg:block shadow-lg"
-      >
-        <img src="img/logo.svg" alt="Logo" />
-      </div>
-
-      <!-- Mobile logo -->
-      <div class="lg:hidden absolute top-2 right-4 bg-white rounded-lg p-2">
-        <img src="img/logo.svg" alt="Logo" class="h-8" />
-      </div>
-    </nav>
-
-    <main>
-      <section class="bg-white py-10 px-4 md:px-16 mx-auto max-w-[1280px] mt-10">
-  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-    <!-- Image Gallery -->
-    <div class="space-y-4">
-      <div class="w-full">
-        <img src="img/blog (3).png" alt="Su Kuyusu" class="rounded-lg shadow-lg w-full h-auto object-cover" />
-      </div>
-      <div class="grid grid-cols-3 gap-2">
-        <img src="img/blog (4).png" alt="Small 1" class="rounded-md shadow w-full h-24 object-cover" />
-        <img src="img/blog (2).png" alt="Small 2" class="rounded-md shadow w-full h-24 object-cover" />
-        <img src="img/blog (1).png" alt="Small 3" class="rounded-md shadow w-full h-24 object-cover" />
-      </div>
-    </div>
-
-    <!-- Text Content -->
-    <div class="text-gray-800 space-y-6">
-      <h2 class="text-2xl md:text-3xl font-bold text-blue-800">Hazret-I Âişe-I Sıddıka Su Kuyusu Temel Atma</h2>
-      <p>
-        Şimdi ise aynı heyecan ve gayret ile Hazret-i Hadice-tül Kübra Su Kuyusunun bağış kampanyasını başlatıyoruz.
-        Web sitemiz üzerinden bağışınızı kredi kartı veya havale ile ulaştırabilirsiniz. Nice su kuyularına vesile olmak için ayrıca sosyal medya hesaplarımızı ziyaret edebilir, kampanyalarımızı sosyal medya hesaplarınızdan paylaşabilirsiniz.
-      </p>
-      <div>
-        <h3 class="font-semibold italic text-gray-600">SU KUYUSU AÇARKEN DİKKAT ETTİĞİMİZ HUSUSLAR:</h3>
-        <ul class="list-disc list-inside mt-2 space-y-1 text-sm text-gray-700">
-          <li>En doğru ve En çok ihtiyaç olan yerde su kuyusunun açılması</li>
-          <li>Bağışınız, kuruşuna kadar su kuyusuna harcanıyor</li>
-          <li>Su kuyusu merkezinde cami, medrese, yetimhane inşaları ile yaşam alanı kuruluyor</li>
-          <li>Derin su kuyuları ile ana su damarından acı olmayan, tatlı ve bereketli su</li>
-          <li>En hızlı bir şekilde 60 günde su kuyusunun açılması</li>
-          <li>En şeffaf süreç, video ve resimlerin gönderilmesi</li>
-          <li>Uzman personelimizle periyodik su kuyusunun denetimi ve bakımları</li>
-          <li>Uzun yıllar boyunca hizmet</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-      <section>
-        <section class="py-10 px-4 bg-white text-center">
-          <p class="text-2xl text-[var(--color-primary)] text-start max-w-6xl mx-auto mb-5">Diğer Haberler</p>
-        <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Card -->
-          <div
-            class="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col"
-          >
-            <img src="img/card11.png" alt="" class="w-full h-48 object-cover" />
-            <div class="p-5 flex flex-col gap-2">
-              <p class="font-semibold text-lg text-gray-800">
-                Hazreti Osman Radıyallahü Anh Su Kuyusu Açıldı
-              </p>
-              
-            </div>
-          </div>
-
-          <!-- Repeat -->
-          <div
-            class="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col"
-          >
-            <img src="img/card11.png" alt="" class="w-full h-48 object-cover" />
-            <div class="p-5 flex flex-col gap-2">
-              <p class="font-semibold text-lg text-gray-800">
-                Hazreti Osman Radıyallahü Anh Su Kuyusu Açıldı
-              </p>
-              
-            </div>
-          </div>
-
-          <div
-            class="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col"
-          >
-            <img src="img/card11.png" alt="" class="w-full h-48 object-cover" />
-            <div class="p-5 flex flex-col gap-2">
-              <p class="font-semibold text-lg text-gray-800">
-                Hazreti Osman Radıyallahü Anh Su Kuyusu Açıldı
-              </p>
-              
-            </div>
-          </div>
-        </div>
-        <div class="mt-10 w-full flex justify-center">
-          <a href="blog.html" target="_blank">
-            <button
-              class="p-3 border border-[#A8BEE2] rounded-xl flex justify-center"
-            >
-              TÜM HABERLERİ GÖR
-            </button>
-          </a>
-        </div>
-      </section>
-      </section>
-    </main>
-
-    <footer class="bg-[#003E92] text-white py-12">
-      <div class="max-w-[1280px] mx-auto px-4">
-        <!-- Newsletter -->
-        <div class="text-center mb-12">
-          <p class="text-orange-400 text-xl mb-2">Güncel Bilgilerden</p>
-          <h3 class="text-3xl sm:text-4xl mb-6">Haberdar Olun</h3>
-          <div
-            class="flex flex-col sm:flex-row gap-2 justify-center items-center max-w-lg mx-auto"
-          >
-            <input
-              type="text"
-              placeholder="Ad, Soyad"
-              class="w-full sm:w-auto flex-1 px-4 py-2 rounded bg-transparent border border-white/30 text-white placeholder-white/70"
-            />
-            <input
-              type="email"
-              placeholder="Mail"
-              class="w-full sm:w-auto flex-1 px-4 py-2 rounded bg-transparent border border-white/30 text-white placeholder-white/70"
-            />
-            <button
-              class="bg-[var(--color-secondary)] hover:bg-orange-600 px-6 py-2 rounded text-white font-medium transition-colors whitespace-nowrap"
-            >
-              ABONE OL
-            </button>
-          </div>
-          <!-- Social Icons -->
-          <div class="flex justify-center gap-4 mt-6">
-            <a
-              href="#"
-              class="w-8 h-8 flex items-center justify-center hover:bg-white/30 transition-colors rounded-full border border-white"
-            >
-              <img src="img/facebook-app-symbol.png" class="w-4" alt="" />
-            </a>
-            <a
-              href="#"
-              class="w-8 h-8 flex items-center justify-center hover:bg-white/30 transition-colors rounded-full border border-white"
-            >
-              <img src="img/twitter.png" class="w-4" alt="" />
-            </a>
-            <a
-              href="#"
-              class="w-8 h-8 flex items-center justify-center hover:bg-white/30 transition-colors rounded-full border border-white"
-            >
-              <img src="img/instagram.png" class="w-4" alt="" />
-            </a>
-            <a
-              href="#"
-              class="w-8 h-8 flex items-center justify-center hover:bg-white/30 transition-colors rounded-full border border-white"
-            >
-              <img src="img/social.png" class="w-4" alt="" />
-            </a>
-          </div>
-        </div>
-
-        <!-- Main Grid Content -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 border-t border-white/20 pt-8 pb-4 border-b-2 text-sm"
-        >
-          <!-- Logo -->
-          <div class="lg:col-span-1">
-            <img
-              src="img/footer_logo.svg"
-              alt="Atlas Vakfı"
-              class="h-24 mx-auto lg:mx-0"
-            />
-          </div>
-
-          <!-- Bağış -->
-          <div>
-            <h3 class="mb-3 font-semibold">Bağış</h3>
-            <ul class="space-y-1">
-              <li>Online Bağış</li>
-              <li>Güvenlik Uyarıları</li>
-              <li>Bağış Nasıl Yapılır</li>
-              <li>Banka Hesap Numaralarımız</li>
-              <li>Gayrimenkul Bağışı</li>
-            </ul>
-          </div>
-
-          <!-- Kurumsal -->
-          <div>
-            <h3 class="mb-3 font-semibold">Kurumsal</h3>
-            <ul class="space-y-1">
-              <li>
-                <a href="#" class="hover:text-orange-400">Vakfımız Hakkında</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-400">Başkanın Mesajı</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-400"
-                  >Vakıf Kuruluş Senedi</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-400">Yönetim Kurulu</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-400">Mütevelli Heyeti</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-400">Vakıf Müdürleri</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-400">Misyon Vizyon</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Faaliyetler -->
-          <div>
-            <h3 class="mb-3 font-semibold">Faaliyetlerimiz</h3>
-            <ul class="space-y-1">
-              <li>
-                <a href="#" class="hover:text-orange-400">Kız Eğitim Kampüsü</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-400">Anaokulu Eğitimi</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-400"
-                  >Biyomedikal Mühendisliği</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-400">Sosyal Sorumluluk</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-400">Konferanslar</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-400">Eğitim Hizmetleri</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-400"
-                  >Sosyal Medya Yönetimi</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-400"
-                  >İnsan Vakfı Yayınları</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- İletişim -->
-          <div>
-            <h3 class="mb-3 font-semibold">İhlas Vakfı Genel Merkez</h3>
-            <div class="space-y-2">
-              <p class="flex gap-2">
-                <img src="img/location.svg" alt="" class="w-4 h-4 mt-1" />
-                Çobançeşme Mah. Fatih Cad. İhlas Koleji Kampüsü C-Blok No: 1/4
-                Yenibosna Bahçelievler İstanbul
-              </p>
-              <div class="flex gap-2 items-center">
-                <img src="img/phone_footer.svg" alt="" class="w-4" />
-                <span>+90 212 61 49 00</span>
-              </div>
-              <div class="flex gap-2 items-center">
-                <img src="img/mail_footer.svg" alt="" class="w-4" />
-                <span>bilgi@atlasvakfi.org.tr</span>
-              </div>
-              <div class="flex gap-2 items-center mt-2">
-                <img src="img/wp.svg" alt="" class="w-10" />
-                <div class="text-xl">
-                  <p>WHATSAPP</p>
-                  <p>Destek Hattı</p>
+                <div class="flex gap-4 text-sm py-2">
+                    <div class="flex gap-0.5">
+                        <img src="img/phone.svg" alt="" width="12px" />
+                        <p class="text-[12px] text-[#A8BEE2] font-medium">
+                            +90 212 451 49 00
+                        </p>
+                    </div>
+                    <div class="flex gap-1 text-[#A8BEE2]">
+                        <img src="img/email.svg" alt="" width="16px" />
+                        <p class="text-[12px] font-medium">
+                            ihlasvakfi@ihlasvakfi.org.tr
+                        </p>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
+                <div class="text-sm py-2 flex gap-2">
+                    <img src="img/card.svg" alt="" width="20px" />
 
-          <!-- SMS Bağış -->
-          <div class="flex flex-col">
-            <div class="flex flex-row gap-4">
-              <div
-                class="text-[var(--color-secondary)] text-2xl md:text-4xl font-semibold mb-2"
-              >
-                BAĞIŞ <br /><span class="text-white">8350</span> <br />10 TL
-              </div>
-              <div class="text-lg mt-1">
-                <span class="text-white">yaz</span> <br />
-                <span class="text-[#A8BEE2] text-sm"
-                  >‘ye gönder, bağışta bulun</span
+                    <p class="text-[12px] text-[#A8BEE2] font-medium">
+                        BANKA HESAP NUMARALARIMIZ.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Main navigation -->
+            <div class="max-w-[1400px] mx-auto">
+                <div class="flex justify-between items-center py-2">
+                    <!-- Desktop navigation links -->
+                    <div class="hidden lg:flex gap-10 items-center">
+                        <a
+                            href=""
+                            class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
+                            >KURUMSAL</a
+                        >
+                        <a
+                            href="./blog.html"
+                            class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
+                            >FAALİYETLERİMİZ</a
+                        >
+                        <a
+                            href=""
+                            class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
+                            >İLETİŞİM</a
+                        >
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <button
+                        id="mobile-menu-btn"
+                        class="lg:hidden flex flex-col gap-1 p-2 z-20"
+                    >
+                        <span
+                            class="w-6 h-0.5 bg-white transition-all duration-300"
+                        ></span>
+                        <span
+                            class="w-6 h-0.5 bg-white transition-all duration-300"
+                        ></span>
+                        <span
+                            class="w-6 h-0.5 bg-white transition-all duration-300"
+                        ></span>
+                    </button>
+
+                    <!-- Desktop action buttons -->
+                    <div class="hidden md:flex gap-2">
+                        <a
+                            href="2.html"
+                            class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
+                        >
+                            <img
+                                src="img/heart.svg"
+                                class="w-7 border-r pr-2 border-[#4779CC] border-opacity-30 font-medium"
+                                alt=""
+                            />
+                            <p class="text-sm">BAĞIŞ YAP</p>
+                        </a>
+
+                        <button
+                            class="flex gap-2 justify-center items-center bg-[#4779CC] px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
+                        >
+                            <img
+                                src="img/person.svg"
+                                class="w-6 border-r pr-2 border-black border-opacity-30 font-medium"
+                                alt=""
+                            />
+                            <p class="text-sm">GÖNÜLLÜ OL</p>
+                        </button>
+                        <button
+                            class="flex gap-2 border-white border px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
+                        >
+                            <img src="img/sunshine.svg" class="w-8" alt="" />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile menu with smooth animations -->
+                <div
+                    id="mobile-menu"
+                    class="lg:hidden overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0 px-2"
                 >
-              </div>
+                    <div class="flex flex-col gap-4 pb-4">
+                        <a
+                            href=""
+                            class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300"
+                            >KURUMSAL</a
+                        >
+                        <a
+                            href=""
+                            class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300 delay-75"
+                            >FAALİYETLERİMİZ</a
+                        >
+                        <a
+                            href=""
+                            class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300 delay-150"
+                            >İLETİŞİM</a
+                        >
+                        <div class="flex w-full justify-between gap-2 mt-2">
+                            <button
+                                class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] px-2 rounded-md text-sm w-full"
+                            >
+                                <img src="img/heart.svg" class="w-5" alt="" />
+                                <p>BAĞIŞ YAP</p>
+                            </button>
+                            <button
+                                class="flex gap-2 justify-center items-center bg-[#4779CC] rounded-md px-2 w-full"
+                            >
+                                <img src="img/person.svg" class="w-3" alt="" />
+                                <p class="text-sm">GÖNÜLLÜ OL</p>
+                            </button>
+                            <button
+                                class="flex gap-2 border-white border p-3 rounded-md"
+                            >
+                                <img
+                                    src="img/sunshine.svg"
+                                    class="w-16"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                        <!-- Mobile contact info -->
+                        <div
+                            class="flex flex-col gap-2 pt-2 border-t border-[#4779CC] text-sm transform translate-y-2 opacity-0 transition-all duration-300 delay-300"
+                        >
+                            <div class="flex gap-2">
+                                <img src="img/phone.svg" alt="" width="16px" />
+                                <p>+90 212 451 49 00</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="img/email.svg" alt="" width="16px" />
+                                <p>ihlasvakfi@ihlasvakfi.org.tr</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="img/card.svg" width="16px" alt="" />
+                                <p class="text-sm">
+                                    BANKA HESAP NUMARALARIMIZ.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="text-[#A8BEE2] mt-3 text-sm">
-              Sizde “BAĞIŞ” Yazıp “8350”Ye SMS Göndererek 10 TL Bağışta
-              Bulunabilirsiniz.
-            </p>
-          </div>
-        </div>
 
-        <!-- Bottom Bar -->
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center mt-8 text-sm gap-4"
-        >
-          <div class="text-[#A8BEE2]">
-            <p>
-              <span class="font-semibold text-white">İhlas Vakfı</span> ©
-              Copyright 2021. Tüm Hakları Saklıdır.
-            </p>
-            <p class="mt-1">
-              5520 sayılı Kanun ve 2008/14232 sayılı Bakanlar Kurulu Kararı ile
-              Vergi Muafiyetine Sahiptir.
-            </p>
-          </div>
-          <div>
-            <p>Designed By</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="navbarFunc.js"></script>
-</body>
+            <!-- Desktop Logo -->
+            <div
+                class="absolute -top-3 left-[50%] -translate-x-[50%] bg-white rounded-xl p-4 pt-7 hidden lg:block shadow-lg w-[150px] h-[160px]"
+            >
+                <img src="img/logo.svg" alt="Logo" />
+            </div>
+
+            <!-- Mobile logo -->
+            <div
+                class="lg:hidden absolute -top-2 right-3 bg-white rounded-lg p-2 pt-3"
+            >
+                <img src="img/logo.svg" alt="Logo" class="h-16" />
+            </div>
+        </nav>
+
+        <main class="bg-[#f4f4f4] p-4 md:py-20">
+            <section
+                class="py-10 px-4 md:px-16 mx-auto max-w-[1400px] p-1 bg-white rounded-lg shadow-lg"
+            >
+                <div
+                    class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-start"
+                >
+                    <!-- Image Gallery -->
+                    <div class="space-y-4">
+                        <div class="w-full">
+                            <img
+                                src="img/blog (3).png"
+                                alt="Su Kuyusu"
+                                class="rounded-lg shadow-lg w-full h-auto object-cover"
+                            />
+                        </div>
+                        <div class="grid grid-cols-3 gap-2">
+                            <img
+                                src="img/blog (4).png"
+                                alt="Small 1"
+                                class="rounded-md shadow w-full h-36 object-cover"
+                            />
+                            <img
+                                src="img/blog (2).png"
+                                alt="Small 2"
+                                class="rounded-md shadow w-full h-36 object-cover"
+                            />
+                            <img
+                                src="img/blog (1).png"
+                                alt="Small 3"
+                                class="rounded-md shadow w-full h-36 object-cover"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Text Content -->
+                    <div class="text-gray-800 space-y-6 mb-12">
+                        <h2 class="text-[26px] font-bold text-[#003E92]">
+                            Hazret-I Âişe-I Sıddıka Su Kuyusu Temel Atma
+                        </h2>
+                        <p
+                            class="font-light italic text-[#707070] text-xl leading-6"
+                        >
+                            Şimdi ise aynı heyecan ve gayret ile Hazret-i
+                            Hadice-tül Kübra Su Kuyusunun bağış kampanyasını
+                            başlatıyoruz. Web sitemiz üzerinden bağışınızı kredi
+                            kartı veya havale ile ulaştırabilirsiniz. Nice su
+                            kuyularına vesile olmak için ayrıca sosyal medya
+                            hesaplarımızı ziyaret edebilir, kampanyalarımızı
+                            sosyal medya hesaplarınızdan paylaşabilirsiniz.
+                        </p>
+                        <div
+                            class="font-light italic text-[#707070] text-xl leading-6"
+                        >
+                            <h3 class="my-4">
+                                SU KUYUSU AÇARKEN DİKKAT ETTİĞİMİZ HUSUSLAR:
+                            </h3>
+                            <ul class="list-disc list-inside">
+                                <li>
+                                    En doğru ve En çok ihtiyaç olan yerde su
+                                    kuyusunun açılması
+                                </li>
+                                <li>
+                                    Bağışınız, kuruşuna kadar su kuyusuna
+                                    harcanıyor
+                                </li>
+                                <li>
+                                    Su kuyusu merkezinde cami, medrese,
+                                    yetimhane inşaları ile yaşam alanı kuruluyor
+                                </li>
+                                <li>
+                                    Derin su kuyuları ile ana su damarından acı
+                                    olmayan, tatlı ve bereketli su
+                                </li>
+                                <li>
+                                    En hızlı bir şekilde 60 günde su kuyusunun
+                                    açılması
+                                </li>
+                                <li>
+                                    En şeffaf süreç, video ve resimlerin
+                                    gönderilmesi
+                                </li>
+                                <li>
+                                    Uzman personelimizle periyodik su kuyusunun
+                                    denetimi ve bakımları
+                                </li>
+                                <li>Uzun yıllar boyunca hizmet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-[#A8BEE2] my-20" />
+                <p
+                    class="text-2xl text-[var(--color-primary)] text-start font-bold mb-5"
+                >
+                    Diğer Haberler
+                </p>
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Card -->
+                    <div class="overflow-hidden flex flex-col">
+                        <img
+                            src="img/card11.png"
+                            alt=""
+                            class="w-full h-56 object-cover"
+                        />
+                        <div class="py-5 flex flex-col gap-2">
+                            <p class="font-bold text-xl text-[#003E92]">
+                                Hazreti Osman Radıyallahü Anh Su Kuyusu Açıldı
+                            </p>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden flex flex-col">
+                        <img
+                            src="img/card11.png"
+                            alt=""
+                            class="w-full h-56 object-cover"
+                        />
+                        <div class="py-5 flex flex-col gap-2">
+                            <p class="font-bold text-xl text-[#003E92]">
+                                Hazreti Osman Radıyallahü Anh Su Kuyusu Açıldı
+                            </p>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden flex flex-col">
+                        <img
+                            src="img/card11.png"
+                            alt=""
+                            class="w-full h-56 object-cover"
+                        />
+                        <div class="py-5 flex flex-col gap-2">
+                            <p class="font-bold text-xl text-[#003E92]">
+                                Hazreti Osman Radıyallahü Anh Su Kuyusu Açıldı
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-[#003E92] text-white py-12">
+            <div class="max-w-[1400px] mx-auto px-4">
+                <!-- Newsletter -->
+                <div class="text-center mb-12">
+                    <p class="text-orange-400 text-xl mb-2">
+                        Güncel Bilgilerden
+                    </p>
+                    <h3 class="text-3xl sm:text-4xl mb-6">Haberdar Olun</h3>
+                    <div
+                        class="flex flex-col sm:flex-row gap-2 justify-center items-center max-w-lg mx-auto"
+                    >
+                        <input
+                            type="text"
+                            placeholder="Ad, Soyad"
+                            class="w-full sm:w-auto flex-1 px-4 py-2 rounded bg-transparent border border-white/30 text-white placeholder-white/70"
+                        />
+                        <input
+                            type="email"
+                            placeholder="Mail"
+                            class="w-full sm:w-auto flex-1 px-4 py-2 rounded bg-transparent border border-white/30 text-white placeholder-white/70"
+                        />
+                        <button
+                            class="bg-[var(--color-secondary)] hover:bg-orange-600 px-6 py-2 rounded text-white font-medium transition-colors whitespace-nowrap"
+                        >
+                            ABONE OL
+                        </button>
+                    </div>
+                    <!-- Social Icons -->
+                    <div class="flex justify-center gap-4 mt-6">
+                        <a
+                            href="#"
+                            class="w-8 h-8 flex items-center justify-center hover:bg-white/30 transition-colors rounded-full border border-white"
+                        >
+                            <img
+                                src="img/facebook-app-symbol.png"
+                                class="w-4"
+                                alt=""
+                            />
+                        </a>
+                        <a
+                            href="#"
+                            class="w-8 h-8 flex items-center justify-center hover:bg-white/30 transition-colors rounded-full border border-white"
+                        >
+                            <img src="img/twitter.png" class="w-4" alt="" />
+                        </a>
+                        <a
+                            href="#"
+                            class="w-8 h-8 flex items-center justify-center hover:bg-white/30 transition-colors rounded-full border border-white"
+                        >
+                            <img src="img/instagram.png" class="w-4" alt="" />
+                        </a>
+                        <a
+                            href="#"
+                            class="w-8 h-8 flex items-center justify-center hover:bg-white/30 transition-colors rounded-full border border-white"
+                        >
+                            <img src="img/social.png" class="w-4" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Main Grid Content -->
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 border-t border-white/20 pt-8 pb-4 border-b-2 text-sm"
+                >
+                    <!-- Logo -->
+                    <div class="lg:col-span-1">
+                        <img
+                            src="img/footer_logo.svg"
+                            alt="Atlas Vakfı"
+                            class="h-24 mx-auto lg:mx-0"
+                        />
+                    </div>
+
+                    <!-- Bağış -->
+                    <div>
+                        <h3 class="mb-3 font-semibold">Bağış</h3>
+                        <ul class="space-y-1">
+                            <li>Online Bağış</li>
+                            <li>Güvenlik Uyarıları</li>
+                            <li>Bağış Nasıl Yapılır</li>
+                            <li>Banka Hesap Numaralarımız</li>
+                            <li>Gayrimenkul Bağışı</li>
+                        </ul>
+                    </div>
+
+                    <!-- Kurumsal -->
+                    <div>
+                        <h3 class="mb-3 font-semibold">Kurumsal</h3>
+                        <ul class="space-y-1">
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Vakfımız Hakkında</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Başkanın Mesajı</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Vakıf Kuruluş Senedi</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Yönetim Kurulu</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Mütevelli Heyeti</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Vakıf Müdürleri</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Misyon Vizyon</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Faaliyetler -->
+                    <div>
+                        <h3 class="mb-3 font-semibold">Faaliyetlerimiz</h3>
+                        <ul class="space-y-1">
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Kız Eğitim Kampüsü</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Anaokulu Eğitimi</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Biyomedikal Mühendisliği</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Sosyal Sorumluluk</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Konferanslar</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Eğitim Hizmetleri</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >Sosyal Medya Yönetimi</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-orange-400"
+                                    >İnsan Vakfı Yayınları</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- İletişim -->
+                    <div>
+                        <h3 class="mb-3 font-semibold">
+                            İhlas Vakfı Genel Merkez
+                        </h3>
+                        <div class="space-y-2">
+                            <p class="flex gap-2">
+                                <img
+                                    src="img/location.svg"
+                                    alt=""
+                                    class="w-4 h-4 mt-1"
+                                />
+                                Çobançeşme Mah. Fatih Cad. İhlas Koleji Kampüsü
+                                C-Blok No: 1/4 Yenibosna Bahçelievler İstanbul
+                            </p>
+                            <div class="flex gap-2 items-center">
+                                <img
+                                    src="img/phone_footer.svg"
+                                    alt=""
+                                    class="w-4"
+                                />
+                                <span>+90 212 61 49 00</span>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img
+                                    src="img/mail_footer.svg"
+                                    alt=""
+                                    class="w-4"
+                                />
+                                <span>bilgi@atlasvakfi.org.tr</span>
+                            </div>
+                            <div class="flex gap-2 items-center mt-2">
+                                <img src="img/wp.svg" alt="" class="w-10" />
+                                <div class="text-xl">
+                                    <p>WHATSAPP</p>
+                                    <p>Destek Hattı</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SMS Bağış -->
+                    <div class="flex flex-col">
+                        <div class="flex flex-row gap-4">
+                            <div
+                                class="text-[var(--color-secondary)] text-2xl md:text-4xl font-semibold mb-2"
+                            >
+                                BAĞIŞ <br /><span class="text-white">8350</span>
+                                <br />10 TL
+                            </div>
+                            <div class="text-lg mt-1">
+                                <span class="text-white">yaz</span> <br />
+                                <span class="text-[#A8BEE2] text-sm"
+                                    >‘ye gönder, bağışta bulun</span
+                                >
+                            </div>
+                        </div>
+                        <p class="text-[#A8BEE2] mt-3 text-sm">
+                            Sizde “BAĞIŞ” Yazıp “8350”Ye SMS Göndererek 10 TL
+                            Bağışta Bulunabilirsiniz.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bottom Bar -->
+                <div
+                    class="flex flex-col md:flex-row justify-between items-start md:items-center mt-8 text-sm gap-4"
+                >
+                    <div class="text-[#A8BEE2]">
+                        <p>
+                            <span class="font-semibold text-white"
+                                >İhlas Vakfı</span
+                            >
+                            © Copyright 2021. Tüm Hakları Saklıdır.
+                        </p>
+                        <p class="mt-1">
+                            5520 sayılı Kanun ve 2008/14232 sayılı Bakanlar
+                            Kurulu Kararı ile Vergi Muafiyetine Sahiptir.
+                        </p>
+                    </div>
+                    <div>
+                        <p>Designed By</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="navbarFunc.js"></script>
+    </body>
 </html>
