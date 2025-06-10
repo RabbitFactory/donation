@@ -8,319 +8,405 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <nav class="bg-[var(--color-primary)] text-white relative">
-      <div
-        class="hidden lg:flex justify-between border-b-2 border-[#4779CC] max-w-[1280px] mx-auto px-4"
-      >
-        <div class="flex gap-4 text-sm py-2">
-          <p class="flex gap-2">
-            <img src="img/phone.svg" alt="" />+90 212 451 49 00
-          </p>
-          <p class="flex gap-2">
-            <img src="img/email.svg" alt="" />ihlasvakfi@ihlasvakfi.org.tr
-          </p>
-        </div>
-        <div class="text-sm py-2 flex gap-2">
-          <img src="img/card.svg" alt="" />BANKA HESAP NUMARALARIMIZ.
-        </div>
-      </div>
-
-      <!-- Main navigation -->
-      <div class="max-w-[1280px] mx-auto px-4">
-        <div class="flex justify-between items-center py-4">
-          <!-- Desktop navigation links -->
-          <div class="hidden lg:flex gap-10 items-center">
-            <a href="" class="hover:text-[#4779CC] transition-colors"
-              >KURUMSAL</a
-            >
-            <a href="" class="hover:text-[#4779CC] transition-colors"
-              >FAALİYETLERİMİZ</a
-            >
-            <a href="" class="hover:text-[#4779CC] transition-colors"
-              >İLETİŞİM</a
-            >
-          </div>
-
-          <!-- Mobile menu button -->
-          <button
-            id="mobile-menu-btn"
-            class="lg:hidden flex flex-col gap-1 p-2 z-20"
-          >
-            <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
-            <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
-            <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
-          </button>
-
-          <!-- Desktop action buttons -->
-          <div class="hidden md:flex gap-2">
-            <a
-              href="2.html"
-              class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] p-3 rounded-xl"
-            >
-              <img
-                src="img/heart.svg"
-                class="w-7 border-r pr-2 border-[#4779CC]"
-                alt=""
-              />
-              BAĞIŞ YAP
-            </a>
-
-            <button
-              class="flex gap-2 justify-center items-center bg-[#4779CC] p-3 rounded-xl"
-            >
-              <img
-                src="img/person.svg"
-                class="w-6 border-r pr-2 border-black"
-                alt=""
-              />GÖNÜLLÜ OL
-            </button>
-            <button class="flex gap-2 border-white border p-3 rounded-xl">
-              <img src="img/sunshine.svg" class="w-8" alt="" />
-            </button>
-          </div>
-        </div>
-
-        <!-- Mobile menu with smooth animations -->
-        <div
-          id="mobile-menu"
-          class="lg:hidden overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0"
-        >
-          <div class="flex flex-col gap-4 pb-4">
-            <a
-              href=""
-              class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300"
-              >KURUMSAL</a
-            >
-            <a
-              href=""
-              class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300 delay-75"
-              >FAALİYETLERİMİZ</a
-            >
-            <a
-              href=""
-              class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300 delay-150"
-              >İLETİŞİM</a
-            >
-            <div class="flex w-full justify-between">
-              <button
-                class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] p-3 rounded-xl"
-              >
-                <img src="img/heart.svg" class="w-7" alt="" />BAĞIŞ YAP
-              </button>
-              <button
-                class="flex gap-2 justify-center items-center bg-[#4779CC] p-3 rounded-xl"
-              >
-                <img src="img/person.svg" class="w-5" alt="" />GÖNÜLLÜ OL
-              </button>
-              <button class="flex gap-2 border-white border p-3 rounded-xl">
-                <img src="img/sunshine.svg" class="w-8" alt="" />
-              </button>
-            </div>
-            <!-- Mobile contact info -->
+    <nav class="bg-[var(--color-primary)] text-white relative z-50">
             <div
-              class="flex flex-col gap-2 mt-4 pt-4 border-t border-[#4779CC] text-sm transform translate-y-2 opacity-0 transition-all duration-300 delay-300"
+                class="hidden lg:flex justify-between border-b-1 border-[#4779CC] max-w-[1400px] mx-auto"
             >
-              <p class="flex gap-2">
-                <img src="img/phone.svg" alt="" />+90 212 451 49 00
+                <div class="flex gap-4 text-sm py-2">
+                    <div class="flex gap-0.5">
+                        <img src="img/phone.svg" alt="" width="12px" />
+                        <p class="text-[12px] text-[#A8BEE2] font-medium">
+                            +90 212 451 49 00
+                        </p>
+                    </div>
+                    <div class="flex gap-1 text-[#A8BEE2]">
+                        <img src="img/email.svg" alt="" width="16px" />
+                        <p class="text-[12px] font-medium">
+                            ihlasvakfi@ihlasvakfi.org.tr
+                        </p>
+                    </div>
+                </div>
+                <div class="text-sm py-2 flex gap-2">
+                    <img src="img/card.svg" alt="" width="20px" />
+
+                    <p class="text-[12px] text-[#A8BEE2] font-medium">
+                        BANKA HESAP NUMARALARIMIZ.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Main navigation -->
+            <div class="max-w-[1400px] mx-auto">
+                <div class="flex justify-between items-center py-2">
+                    <!-- Desktop navigation links -->
+                    <div class="hidden lg:flex gap-10 items-center">
+                        <a
+                            href=""
+                            class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
+                            >KURUMSAL</a
+                        >
+                        <a
+                            href=""
+                            class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
+                            >FAALİYETLERİMİZ</a
+                        >
+                        <a
+                            href=""
+                            class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
+                            >İLETİŞİM</a
+                        >
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <button
+                        id="mobile-menu-btn"
+                        class="lg:hidden flex flex-col gap-1 p-2 z-20"
+                    >
+                        <span
+                            class="w-6 h-0.5 bg-white transition-all duration-300"
+                        ></span>
+                        <span
+                            class="w-6 h-0.5 bg-white transition-all duration-300"
+                        ></span>
+                        <span
+                            class="w-6 h-0.5 bg-white transition-all duration-300"
+                        ></span>
+                    </button>
+
+                    <!-- Desktop action buttons -->
+                    <div class="hidden md:flex gap-2">
+                        <a
+                            href="2.html"
+                            class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
+                        >
+                            <img
+                                src="img/heart.svg"
+                                class="w-7 border-r pr-2 border-[#4779CC] border-opacity-30 font-medium"
+                                alt=""
+                            />
+                            <p class="text-sm">BAĞIŞ YAP</p>
+                        </a>
+
+                        <button
+                            class="flex gap-2 justify-center items-center bg-[#4779CC] px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
+                        >
+                            <img
+                                src="img/person.svg"
+                                class="w-6 border-r pr-2 border-black border-opacity-30 font-medium"
+                                alt=""
+                            />
+                            <p class="text-sm">GÖNÜLLÜ OL</p>
+                        </button>
+                        <button
+                            class="flex gap-2 border-white border px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
+                        >
+                            <img src="img/sunshine.svg" class="w-8" alt="" />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile menu with smooth animations -->
+                <div
+                    id="mobile-menu"
+                    class="lg:hidden overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0 px-2"
+                >
+                    <div class="flex flex-col gap-4 pb-4">
+                        <a
+                            href=""
+                            class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300"
+                            >KURUMSAL</a
+                        >
+                        <a
+                            href=""
+                            class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300 delay-75"
+                            >FAALİYETLERİMİZ</a
+                        >
+                        <a
+                            href=""
+                            class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300 delay-150"
+                            >İLETİŞİM</a
+                        >
+                        <div class="flex w-full justify-between gap-2 mt-2">
+                            <button
+                                class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] px-2 rounded-md text-sm w-full"
+                            >
+                                <img src="img/heart.svg" class="w-5" alt="" />
+                                <p>BAĞIŞ YAP</p>
+                            </button>
+                            <button
+                                class="flex gap-2 justify-center items-center bg-[#4779CC] rounded-md px-2 w-full"
+                            >
+                                <img src="img/person.svg" class="w-3" alt="" />
+                                <p class="text-sm">GÖNÜLLÜ OL</p>
+                            </button>
+                            <button
+                                class="flex gap-2 border-white border p-3 rounded-md"
+                            >
+                                <img
+                                    src="img/sunshine.svg"
+                                    class="w-16"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                        <!-- Mobile contact info -->
+                        <div
+                            class="flex flex-col gap-2 pt-2 border-t border-[#4779CC] text-sm transform translate-y-2 opacity-0 transition-all duration-300 delay-300"
+                        >
+                            <div class="flex gap-2">
+                                <img src="img/phone.svg" alt="" width="16px" />
+                                <p>+90 212 451 49 00</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="img/email.svg" alt="" width="16px" />
+                                <p>ihlasvakfi@ihlasvakfi.org.tr</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="img/card.svg" width="16px" alt="" />
+                                <p class="text-sm">
+                                    BANKA HESAP NUMARALARIMIZ.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop Logo -->
+            <div
+                class="absolute -top-3 left-[50%] -translate-x-[50%] bg-white rounded-xl p-4 pt-7 hidden lg:block shadow-lg w-[150px] h-[160px]"
+            >
+                <img src="img/logo.svg" alt="Logo" />
+            </div>
+
+            <!-- Mobile logo -->
+            <div
+                class="lg:hidden absolute -top-2 right-3 bg-white rounded-lg p-2 pt-3"
+            >
+                <img src="img/logo.svg" alt="Logo" class="h-16" />
+            </div>
+        </nav>
+    <main>
+      <section
+        class="bg-[url('/img/herobg.png')] bg-cover bg-no-repeat bg-center px-4 py-8"
+      >
+        <h1
+          class="max-w-[1400px] mx-auto text-4xl font-bold my-10 text-[var(--color-primary)]"
+        >
+          ÖDEME YAP
+        </h1>
+        <div class="flex max-w-[1400px] mx-auto gap-10 flex-col md:flex-row">
+          <!-- left side -->
+          <div class="flex flex-col gap-5">
+            <div class="bg-white p-10 rounded-lg shadow-lg">
+              <p class="font-bold text-[var(--color-primary)]">
+                Kişisel Bilgiler
               </p>
-              <p class="flex gap-2">
-                <img src="img/email.svg" alt="" />ihlasvakfi@ihlasvakfi.org.tr
-              </p>
-              <div class="text-sm py-2 flex gap-2">
-                <img src="img/card.svg" alt="" />BANKA HESAP NUMARALARIMIZ.
+              <div class="flex gap-2 my-4">
+                <input
+                  type="text"
+                  placeholder="Ad,Soyad"
+                  class="w-full border px-3 py-2 h-12 rounded-lg border-[#A8BEE2] text-[var(--color-primary)]"
+                />
+                <input
+                  type="text"
+                  placeholder="Telefon"
+                  class="w-full border px-3 py-2 h-12 rounded-lg border-[#A8BEE2] text-[var(--color-primary)]"
+                />
+                <input
+                  type="text"
+                  placeholder="Mail"
+                  class="w-full border px-3 py-2 h-12 rounded-lg border-[#A8BEE2] text-[var(--color-primary)]"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Bağış Notu"
+                class="w-full border px-3 py-2 h-12 rounded-lg border-[#A8BEE2] text-[var(--color-primary)]"
+              />
+              <div
+                class="flex flex-col md:flex-row gap-2 sm:gap-10 mb-4 text-sm text-gray-600 mt-4  md:items-start"
+              >
+                <label class="flex items-center gap-1">
+                  <input
+                    type="radio"
+                    name="burs-type"
+                    class="accent-[var(--color-secondary)]"
+                  />
+                  Tek Seferlik Bağış
+                </label>
+                <label class="flex items-center gap-1">
+                  <input
+                    type="radio"
+                    name="burs-type"
+                    class="accent-[var(--color-secondary)]"
+                  />
+                  Aylık Düzenli Bağış
+                </label>
+              </div>
+              <p class="text-[var(--color-primary)] font-bold">Bağış Türü</p>
+              <div
+                class="flex flex-col md:flex-row gap-2 sm:gap-24 mb-4 text-sm text-gray-600 mt-4  md:items-start"
+              >
+                <label class="flex items-center gap-1">
+                  <input
+                    type="radio"
+                    name="burs-type"
+                    class="accent-[var(--color-secondary)]"
+                  />
+                  Bireysel
+                </label>
+                <label class="flex items-center gap-1">
+                  <input
+                    type="radio"
+                    name="burs-type"
+                    class="accent-[var(--color-secondary)]"
+                  />
+                  Kurumsal
+                </label>
+                <label class="flex items-center gap-1">
+                  <input
+                    type="radio"
+                    name="burs-type"
+                    class="accent-[var(--color-secondary)]"
+                  />
+                  Grup
+                </label>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Desktop Logo -->
-      <div
-        class="absolute -top-2 left-[50%] -translate-x-[50%] bg-white rounded-xl p-4 pt-7 hidden lg:block shadow-lg"
-      >
-        <img src="img/logo.svg" alt="Logo" />
-      </div>
-
-      <!-- Mobile logo -->
-      <div class="lg:hidden absolute top-2 right-4 bg-white rounded-lg p-2">
-        <img src="img/logo.svg" alt="Logo" class="h-8" />
-      </div>
-    </nav>
-    <main>
-      <section>
-        <section class="bg-[url('/img/herobg.png')] bg-cover bg-no-repeat bg-center p-4 py-20">
-          <div class="max-w-7xl mx-auto grid lg:grid-cols-3 gap-6">
-            <!-- Left Content -->
-            <div class="lg:col-span-2 space-y-6">
-              <!-- Personal Info -->
-              <div class="bg-white p-6 rounded-lg shadow">
-                <h2 class="font-bold text-lg text-blue-800 mb-4">
-                  Kişisel Bilgiler
-                </h2>
-                <div class="grid md:grid-cols-3 gap-4">
-                  <input
-                    type="text"
-                    placeholder="Ad,Soyad"
-                    class="input-field"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Telefon"
-                    class="input-field"
-                  />
-                  <input type="email" placeholder="Mail" class="input-field" />
-                </div>
-                <textarea
-                  placeholder="Bağış Notu"
-                  class="input-field mt-4 w-full"
-                ></textarea>
-
-                <!-- Donation Frequency -->
-                <div class="mt-4 flex items-center gap-6">
-                  <label class="flex items-center gap-2">
-                    <input type="radio" name="bagis_tipi" checked />
-                    <span>Tek Seferlik Bağış</span>
-                  </label>
-                  <label class="flex items-center gap-2">
-                    <input type="radio" name="bagis_tipi" />
-                    <span>Aylık Düzenli Bağış</span>
-                  </label>
-                </div>
-
-                <!-- Donation Type -->
-                <div class="mt-4">
-                  <p class="font-medium">Bağış Türü</p>
-                  <div class="flex items-center gap-6 mt-2">
-                    <label class="flex items-center gap-2">
-                      <input type="radio" name="bagis_turu" checked />
-                      <span>Bireysel</span>
-                    </label>
-                    <label class="flex items-center gap-2">
-                      <input type="radio" name="bagis_turu" />
-                      <span>Kurumsal</span>
-                    </label>
-                    <label class="flex items-center gap-2">
-                      <input type="radio" name="bagis_turu" />
-                      <span>Grup</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card Info -->
-              <div class="bg-white p-6 rounded-lg shadow">
-                <h2 class="font-bold text-lg text-blue-800 mb-4">
-                  Kart Bilgileri
-                </h2>
-                <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-white p-10 rounded-lg shadow-lg">
+              <p class="font-bold text-[var(--color-primary)]">
+                Kart Bilgileri
+              </p>
+              <div class="flex gap-5 flex-col md:flex-row">
+                <div>
                   <input
                     type="text"
                     placeholder="Kartın Üzerindeki İsim, Soyisim"
-                    class="input-field"
+                    class="my-4 w-full border px-3 py-2 h-12 rounded-lg border-[#A8BEE2] text-[var(--color-primary)]"
                   />
-                  <div
-                    class="bg-blue-200 rounded-md h-full flex items-center justify-center text-sm text-gray-700"
-                  >
-                    İSİM SOYİSİM
-                  </div>
-                </div>
-                <div class="mt-4 grid md:grid-cols-2 gap-4">
                   <input
                     type="text"
                     placeholder="Kart Numarası"
-                    class="input-field"
+                    class="w-full border px-3 py-2 h-12 rounded-lg border-[#A8BEE2] text-[var(--color-primary)]"
                   />
-                  <div class="grid grid-cols-2 gap-2">
-                    <select class="input-field">
-                      <option>AY/YIL</option>
-                      <!-- Add months -->
-                    </select>
-                    <input type="text" placeholder="CVV" class="input-field" />
+                  <div class="flex gap-2 my-4">
+                    <div class="">
+                      <select
+                        class="border border-[#A8BEE2] focus:outline-none rounded px-4 py-2 text-sm h-12 w-[100px] md:w-[250px] text-[var(--color-primary)]"
+                      >
+                        <option>AY/YL</option>
+                        <option>AY</option>
+                        <option>YL</option>
+                      </select>
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="CVV"
+                      class="w-full border px-3 py-2 h-12 rounded-lg border-[#A8BEE2] text-[var(--color-primary)]"
+                    />
                   </div>
+                </div>
+                <div class="bg-[#A8BEE2] relative w-full md:w-96 h-36 md:h-auto rounded-lg">
+                  <p class="absolute bottom-6 left-8 text-white">
+                    İSİM SOYİSİM
+                  </p>
                 </div>
               </div>
-            </div>
-
-            <!-- Right: Cart Summary -->
-            <div
-              class="bg-white p-6 rounded-lg shadow flex flex-col justify-between h-full"
-            >
-              <div>
-                <h2 class="font-bold text-lg text-blue-800 mb-4">
-                  Bağış Sepeti (3)
-                </h2>
-                <div class="space-y-4">
-                  <!-- Cart Items -->
-                  <div class="flex justify-between items-center">
-                    <div>
-                      <p>Sadaka</p>
-                      <div class="flex items-center gap-2 mt-1">
-                        <button class="px-2 bg-gray-200">-</button>
-                        <span>1</span>
-                        <button class="px-2 bg-gray-200">+</button>
-                      </div>
-                    </div>
-                    <div class="text-right">
-                      <p>100 TL</p>
-                      <button class="text-red-500 text-sm">Sil ✕</button>
-                    </div>
-                  </div>
-
-                  <!-- Repeat for more items -->
-                  <div class="flex justify-between items-center">
-                    <div>
-                      <p>Sadaka</p>
-                      <div class="flex items-center gap-2 mt-1">
-                        <button class="px-2 bg-gray-200">-</button>
-                        <span>1</span>
-                        <button class="px-2 bg-gray-200">+</button>
-                      </div>
-                    </div>
-                    <div class="text-right">
-                      <p>100 TL</p>
-                      <button class="text-red-500 text-sm">Sil ✕</button>
-                    </div>
-                  </div>
-
-                  <div class="flex justify-between items-center">
-                    <div>
-                      <p>Sadaka</p>
-                      <div class="flex items-center gap-2 mt-1">
-                        <button class="px-2 bg-gray-200">-</button>
-                        <span>1</span>
-                        <button class="px-2 bg-gray-200">+</button>
-                      </div>
-                    </div>
-                    <div class="text-right">
-                      <p>100 TL</p>
-                      <button class="text-red-500 text-sm">Sil ✕</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-6 font-bold text-lg flex justify-between">
-                  <span>Toplam</span>
-                  <span>585 TL</span>
-                </div>
-              </div>
-
-              <!-- Payment Button -->
-              <a href="thanks.html">
-                <button
-                class="mt-6 bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 rounded-md w-full transition duration-300"
-              >
-                ÖDEME YAP
-              </button>
-              </a>
             </div>
           </div>
-        </section>
 
-        <!-- Tailwind Input Styling -->
-        <style>
-          .input-field {
-            @apply border border-blue-200 rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-300;
-          }
-        </style>
+          <!-- right side -->
+          <div class="w-full">
+            <div class="w-full">
+              <div class="bg-white shadow-md rounded-xl p-6 w-full">
+                <h2 class="text-xl font-bold text-[var(--color-primary)] mb-4">
+                  Bağış Sepeti (3)
+                </h2>
+
+                <!-- Donation Item -->
+                <div class="border-b border-[#A8BEE2] pb-4 mb-4">
+                  <div class="flex justify-between items-center">
+                    <span class="text-[var(--color-primary)]">Sadaka</span>
+                    <span class="text-[var(--color-primary)]">100 TL</span>
+                  </div>
+                  <div class="flex justify-between items-center mt-2">
+                    <div
+                      class="flex items-center space-x-2 border rounded-lg border-[#A8BEE2] px-2 py-1 text-[var(--color-primary)]"
+                    >
+                      <button class="px-2 py-1 text-[var(--color-primary)]">
+                        -
+                      </button>
+                      <span class="text-[var(--color-primary)]">1</span>
+                      <button class="px-2 py-1 text-[var(--color-primary)]">
+                        +
+                      </button>
+                    </div>
+                    <button class="text-[var(--color-primary)]">Sil ×</button>
+                  </div>
+                </div>
+
+                <!-- Repeat Donation Item -->
+                <div class="border-b border-[#A8BEE2] pb-4 mb-4">
+                  <div class="flex justify-between items-center">
+                    <span class="text-[var(--color-primary)]">Sadaka</span>
+                    <span class="text-[var(--color-primary)]">100 TL</span>
+                  </div>
+                  <div class="flex justify-between items-center mt-2">
+                    <div
+                      class="flex items-center space-x-2 border rounded-lg border-[#A8BEE2] px-2 py-1 text-[var(--color-primary)]"
+                    >
+                      <button class="px-2 py-1 text-[var(--color-primary)]">
+                        -
+                      </button>
+                      <span class="text-[var(--color-primary)]">1</span>
+                      <button class="px-2 py-1 text-[var(--color-primary)]">
+                        +
+                      </button>
+                    </div>
+                    <button class="text-[var(--color-primary)]">Sil ×</button>
+                  </div>
+                </div>
+
+                <div class="border-b border-[#A8BEE2] pb-4 mb-4">
+                  <div class="flex justify-between items-center">
+                    <span class="text-[var(--color-primary)]">Sadaka</span>
+                    <span class="text-[var(--color-primary)]">100 TL</span>
+                  </div>
+                  <div class="flex justify-between items-center mt-2">
+                    <div
+                      class="flex items-center space-x-2 border rounded-lg border-[#A8BEE2] px-2 py-1 text-[var(--color-primary)]"
+                    >
+                      <button class="px-2 py-1 text-[var(--color-primary)]">
+                        -
+                      </button>
+                      <span class="text-[var(--color-primary)]">1</span>
+                      <button class="px-2 py-1 text-[var(--color-primary)]">
+                        +
+                      </button>
+                    </div>
+                    <button class="text-[var(--color-primary)]">Sil ×</button>
+                  </div>
+                </div>
+
+                <!-- Total -->
+                <div class="flex justify-between items-center mt-4">
+                  <span class="font-bold text-[var(--color-primary)] text-lg"
+                    >Toplam</span
+                  >
+                  <span class="font-bold text-[var(--color-primary)] text-lg"
+                    >585 TL</span
+                  >
+                </div>
+              </div>
+            </div>
+            <button
+              class="rounded-xl bg-[var(--color-secondary)] py-4 px-10 w-full text-white mt-4"
+            >
+              ÖDEME YAP
+            </button>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="bg-[#003E92] text-white py-12">
