@@ -14,20 +14,20 @@
             >
                 <div class="flex gap-4 text-sm py-2">
                     <div class="flex gap-0.5">
-                        <img src="img/phone.svg" alt="" width="12px" />
+                        <img src="./img/phone.svg" alt="" width="12px" />
                         <p class="text-[12px] text-[#A8BEE2] font-medium">
                             +90 212 451 49 00
                         </p>
                     </div>
                     <div class="flex gap-1 text-[#A8BEE2]">
-                        <img src="img/email.svg" alt="" width="16px" />
+                        <img src="./img/email.svg" alt="" width="16px" />
                         <p class="text-[12px] font-medium">
                             ihlasvakfi@ihlasvakfi.org.tr
                         </p>
                     </div>
                 </div>
                 <div class="text-sm py-2 flex gap-2">
-                    <img src="img/card.svg" alt="" width="20px" />
+                    <img src="./img/card.svg" alt="" width="20px" />
 
                     <p class="text-[12px] text-[#A8BEE2] font-medium">
                         BANKA HESAP NUMARALARIMIZ.
@@ -80,7 +80,7 @@
                             class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
                         >
                             <img
-                                src="img/heart.svg"
+                                src="./img/heart.svg"
                                 class="w-7 border-r pr-2 border-[#4779CC] border-opacity-30 font-medium"
                                 alt=""
                             />
@@ -91,7 +91,7 @@
                             class="flex gap-2 justify-center items-center bg-[#4779CC] px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
                         >
                             <img
-                                src="img/person.svg"
+                                src="./img/person.svg"
                                 class="w-6 border-r pr-2 border-black border-opacity-30 font-medium"
                                 alt=""
                             />
@@ -100,7 +100,7 @@
                         <button
                             class="flex gap-2 border-white border px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
                         >
-                            <img src="img/sunshine.svg" class="w-8" alt="" />
+                            <img src="./img/sunshine.svg" class="w-8" alt="" />
                         </button>
                     </div>
                 </div>
@@ -130,20 +130,20 @@
                             <button
                                 class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] px-2 rounded-md text-sm w-full"
                             >
-                                <img src="img/heart.svg" class="w-5" alt="" />
+                                <img src="./img/heart.svg" class="w-5" alt="" />
                                 <p>BAĞIŞ YAP</p>
                             </button>
                             <button
                                 class="flex gap-2 justify-center items-center bg-[#4779CC] rounded-md px-2 w-full"
                             >
-                                <img src="img/person.svg" class="w-3" alt="" />
+                                <img src="./img/person.svg" class="w-3" alt="" />
                                 <p class="text-sm">GÖNÜLLÜ OL</p>
                             </button>
                             <button
                                 class="flex gap-2 border-white border p-3 rounded-md"
                             >
                                 <img
-                                    src="img/sunshine.svg"
+                                    src="./img/sunshine.svg"
                                     class="w-16"
                                     alt=""
                                 />
@@ -154,15 +154,15 @@
                             class="flex flex-col gap-2 pt-2 border-t border-[#4779CC] text-sm transform translate-y-2 opacity-0 transition-all duration-300 delay-300"
                         >
                             <div class="flex gap-2">
-                                <img src="img/phone.svg" alt="" width="16px" />
+                                <img src="./img/phone.svg" alt="" width="16px" />
                                 <p>+90 212 451 49 00</p>
                             </div>
                             <div class="flex gap-2">
-                                <img src="img/email.svg" alt="" width="16px" />
+                                <img src="./img/email.svg" alt="" width="16px" />
                                 <p>ihlasvakfi@ihlasvakfi.org.tr</p>
                             </div>
                             <div class="flex gap-2">
-                                <img src="img/card.svg" width="16px" alt="" />
+                                <img src="./img/card.svg" width="16px" alt="" />
                                 <p class="text-sm">
                                     BANKA HESAP NUMARALARIMIZ.
                                 </p>
@@ -176,20 +176,20 @@
             <div
                 class="absolute -top-3 left-[50%] -translate-x-[50%] bg-white rounded-xl p-4 pt-7 hidden lg:block shadow-lg w-[150px] h-[160px]"
             >
-                <img src="img/logo.svg" alt="Logo" />
+                <img src="./img/logo.svg" alt="Logo" />
             </div>
 
             <!-- Mobile logo -->
             <div
                 class="lg:hidden absolute -top-2 right-3 bg-white rounded-lg p-2 pt-3"
             >
-                <img src="img/logo.svg" alt="Logo" class="h-16" />
+                <img src="./img/logo.svg" alt="Logo" class="h-16" />
             </div>
         </nav>
 
     <main>
       <section
-        class="bg-[url('/img/herobg.png')] bg-cover bg-no-repeat px-4 py-8"
+        class="bg-[url('./img/herobg.png')] bg-cover bg-no-repeat px-4 py-8"
       >
         <!-- Message Box -->
         <div class="flex flex-col justify-center items-center text-center pt-20">
@@ -225,21 +225,39 @@
   </div>
 </div>
 
-        <!-- Floating SMS Donation Button -->
-        <div class="fixed bottom-6 right-6 z-50">
-          <div
-            class="bg-blue-900 text-white rounded-xl shadow-lg px-4 py-3 flex flex-col items-center gap-1 text-center w-32"
-          >
-            <span class="text-sm text-yellow-400 font-bold">BAĞIŞ</span>
-            <span class="text-2xl font-bold">8350</span>
-            <span class="text-yellow-400 font-bold">10 TL</span>
-            <span class="text-xs text-white"
-              >yaz<br />ve Gönder<br />Bağışta Bulun</span
-            >
-          </div>
-        </div>
+   
       </section>
     </main>
+    <!-- Floating Button -->
+<div class="fixed bottom-6 right-6 z-50 cursor-pointer">
+  <!-- Speech Bubble -->
+  <div class="relative bg-blue-900 text-white p-4 rounded-3xl shadow-lg flex  items-end justify-end ">
+    <!-- Pointer -->
+    <div class="absolute -left-3 bottom-6 w-0 h-0 border-t-[15px] border-t-transparent border-b-[15px] border-b-transparent border-r-[15px] border-r-blue-900"></div>
+    
+    <!-- Text Content -->
+    <div class="h-24"
+    ><div class="text-[#FF9D00] text-4xl  font-bold">BAĞIŞ</div>
+    <div class="text-white text-4xl font-bold leading-6">8350</div>
+    <div class=" inline-block text-[#FF9D00] text-4xl font-bold">
+      10 TL
+    </div></div>
+    <div class="text-white space-y-1 text-right text-sm leading-tight">
+      <div><span class="text-white font-light text-2xl italic ">yaz</span></div>
+      <div class="text-blue-300 text-left text-sm  leading-4"><p>'ye </p>
+      Gönder</div>
+      <div class="text-sm leading-3" >Bağışta</div>
+      <div class="text-sm leading-3">bulun</div>
+    </div>
+  </div>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scrollToTopBtn" class="hidden md:flex mt-3 w-16 h-16 rounded-full bg-[#FF9D00] items-center justify-center shadow-lg hover:bg-orange-600 transition">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+</div>
     <footer class="bg-[#003E92] text-white py-12">
             <div class="max-w-[1400px] mx-auto px-4">
                 <!-- Newsletter -->
@@ -276,7 +294,7 @@
                             class="w-8 h-8 flex items-center justify-center hover:bg-white/30 transition-colors rounded-full border border-white"
                         >
                             <img
-                                src="img/facebook-app-symbol.png"
+                                src="./img/facebook-app-symbol.png"
                                 class="w-4"
                                 alt=""
                             />
@@ -285,19 +303,19 @@
                             href="#"
                             class="w-8 h-8 flex items-center justify-center hover:bg-white/30 transition-colors rounded-full border border-white"
                         >
-                            <img src="img/twitter.png" class="w-4" alt="" />
+                            <img src="./img/twitter.png" class="w-4" alt="" />
                         </a>
                         <a
                             href="#"
                             class="w-8 h-8 flex items-center justify-center hover:bg-white/30 transition-colors rounded-full border border-white"
                         >
-                            <img src="img/instagram.png" class="w-4" alt="" />
+                            <img src="./img/instagram.png" class="w-4" alt="" />
                         </a>
                         <a
                             href="#"
                             class="w-8 h-8 flex items-center justify-center hover:bg-white/30 transition-colors rounded-full border border-white"
                         >
-                            <img src="img/social.png" class="w-4" alt="" />
+                            <img src="./img/social.png" class="w-4" alt="" />
                         </a>
                     </div>
                 </div>
@@ -309,7 +327,7 @@
                     <!-- Logo -->
                     <div class="">
                         <img
-                            src="img/footer_logo.svg"
+                            src="./img/footer_logo.svg"
                             alt="Atlas Vakfı"
                             class="h-24 mx-auto lg:mx-0"
                         />
@@ -426,7 +444,7 @@
                         <div class="space-y-2 font-light">
                             <p class="flex gap-2 mb-4">
                                 <img
-                                    src="img/location.svg"
+                                    src="./img/location.svg"
                                     alt=""
                                     class="w-4 h-4 mt-1"
                                 />
@@ -435,7 +453,7 @@
                             </p>
                             <div class="flex gap-2 items-center">
                                 <img
-                                    src="img/phone_footer.svg"
+                                    src="./img/phone_footer.svg"
                                     alt=""
                                     class="w-4"
                                 />
@@ -443,14 +461,14 @@
                             </div>
                             <div class="flex gap-2 items-center">
                                 <img
-                                    src="img/mail_footer.svg"
+                                    src="./img/mail_footer.svg"
                                     alt=""
                                     class="w-4"
                                 />
                                 <span>bilgi@atlasvakfi.org.tr</span>
                             </div>
                             <div class="flex gap-2 items-center mt-2">
-                                <img src="img/wp.svg" alt="" class="w-10" />
+                                <img src="./img/wp.svg" alt="" class="w-10" />
                                 <div class="text-xl font-medium mt-4">
                                     <p>WHATSAPP</p>
                                     <p>Destek Hattı</p>
