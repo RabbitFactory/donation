@@ -6,28 +6,36 @@
         <title>Ilhas Vakfi</title>
         <link rel="stylesheet" href="index.css" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        />
     </head>
     <body>
         <nav class="bg-[var(--color-primary)] text-white relative z-50">
             <div
-                class="hidden lg:flex justify-between border-b-1 border-[#4779CC] max-w-[1400px] mx-auto"
+                class="hidden lg:flex justify-between border-b-1 border-[#4779CC] container mx-auto"
             >
                 <div class="flex gap-4 text-sm py-2">
                     <div class="flex gap-0.5">
-                        <img src="img/phone.svg" alt="" width="12px" />
+                        <img src="./img/phone.svg" alt="" width="12px" />
                         <p class="text-[12px] text-[#A8BEE2] font-medium">
                             +90 212 451 49 00
                         </p>
                     </div>
                     <div class="flex gap-1 text-[#A8BEE2]">
-                        <img src="img/email.svg" alt="" width="16px" />
+                        <img src="./img/email.svg" alt="" width="16px" />
                         <p class="text-[12px] font-medium">
                             ihlasvakfi@ihlasvakfi.org.tr
                         </p>
                     </div>
                 </div>
                 <div class="text-sm py-2 flex gap-2">
-                    <img src="img/card.svg" alt="" width="20px" />
+                    <img src="./img/card.svg" alt="" width="20px" />
 
                     <p class="text-[12px] text-[#A8BEE2] font-medium">
                         BANKA HESAP NUMARALARIMIZ.
@@ -36,12 +44,12 @@
             </div>
 
             <!-- Main navigation -->
-            <div class="max-w-[1400px] mx-auto">
+            <div class="container mx-auto">
                 <div class="flex justify-between items-center py-2">
                     <!-- Desktop navigation links -->
                     <div class="hidden lg:flex gap-10 items-center">
                         <a
-                            href=""
+                            href="./2.html"
                             class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
                             >KURUMSAL</a
                         >
@@ -51,7 +59,7 @@
                             >FAALİYETLERİMİZ</a
                         >
                         <a
-                            href=""
+                            href="./product.html"
                             class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
                             >İLETİŞİM</a
                         >
@@ -76,32 +84,34 @@
                     <!-- Desktop action buttons -->
                     <div class="hidden md:flex gap-2">
                         <a
-                            href="2.html"
+                            href="./checkout.html"
                             class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
                         >
                             <img
-                                src="img/heart.svg"
+                                src="./img/heart.svg"
                                 class="w-7 border-r pr-2 border-[#4779CC] border-opacity-30 font-medium"
                                 alt=""
                             />
                             <p class="text-sm">BAĞIŞ YAP</p>
                         </a>
 
-                        <button
+                        <a
+                            href="./thanks.html"
                             class="flex gap-2 justify-center items-center bg-[#4779CC] px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
                         >
                             <img
-                                src="img/person.svg"
+                                src="./img/person.svg"
                                 class="w-6 border-r pr-2 border-black border-opacity-30 font-medium"
                                 alt=""
                             />
                             <p class="text-sm">GÖNÜLLÜ OL</p>
-                        </button>
-                        <button
+                        </a>
+                        <a
+                            href="./failed.html"
                             class="flex gap-2 border-white border px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
                         >
-                            <img src="img/sunshine.svg" class="w-8" alt="" />
-                        </button>
+                            <img src="./img/sunshine.svg" class="w-8" alt="" />
+                        </a>
                     </div>
                 </div>
 
@@ -130,20 +140,24 @@
                             <button
                                 class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] px-2 rounded-md text-sm w-full"
                             >
-                                <img src="img/heart.svg" class="w-5" alt="" />
+                                <img src="./img/heart.svg" class="w-5" alt="" />
                                 <p>BAĞIŞ YAP</p>
                             </button>
                             <button
                                 class="flex gap-2 justify-center items-center bg-[#4779CC] rounded-md px-2 w-full"
                             >
-                                <img src="img/person.svg" class="w-3" alt="" />
+                                <img
+                                    src="./img/person.svg"
+                                    class="w-3"
+                                    alt=""
+                                />
                                 <p class="text-sm">GÖNÜLLÜ OL</p>
                             </button>
                             <button
                                 class="flex gap-2 border-white border p-3 rounded-md"
                             >
                                 <img
-                                    src="img/sunshine.svg"
+                                    src="./img/sunshine.svg"
                                     class="w-16"
                                     alt=""
                                 />
@@ -154,15 +168,23 @@
                             class="flex flex-col gap-2 pt-2 border-t border-[#4779CC] text-sm transform translate-y-2 opacity-0 transition-all duration-300 delay-300"
                         >
                             <div class="flex gap-2">
-                                <img src="img/phone.svg" alt="" width="16px" />
+                                <img
+                                    src="./img/phone.svg"
+                                    alt=""
+                                    width="16px"
+                                />
                                 <p>+90 212 451 49 00</p>
                             </div>
                             <div class="flex gap-2">
-                                <img src="img/email.svg" alt="" width="16px" />
+                                <img
+                                    src="./img/email.svg"
+                                    alt=""
+                                    width="16px"
+                                />
                                 <p>ihlasvakfi@ihlasvakfi.org.tr</p>
                             </div>
                             <div class="flex gap-2">
-                                <img src="img/card.svg" width="16px" alt="" />
+                                <img src="./img/card.svg" width="16px" alt="" />
                                 <p class="text-sm">
                                     BANKA HESAP NUMARALARIMIZ.
                                 </p>
@@ -172,18 +194,21 @@
                 </div>
             </div>
 
-            <!-- Desktop Logo -->
             <div
                 class="absolute -top-3 left-[50%] -translate-x-[50%] bg-white rounded-xl p-4 pt-7 hidden lg:block shadow-lg w-[150px] h-[160px]"
             >
-                <img src="img/logo.svg" alt="Logo" />
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="Logo" />
+                </a>
             </div>
 
             <!-- Mobile logo -->
             <div
                 class="lg:hidden absolute -top-2 right-3 bg-white rounded-lg p-2 pt-3"
             >
-                <img src="img/logo.svg" alt="Logo" class="h-16" />
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="Logo" class="h-16" />
+                </a>
             </div>
         </nav>
 
@@ -192,7 +217,7 @@
                 class="bg-[url('./img/herobg.png')] bg-no-repeat bg-center py-10 md:py-10 relative"
             >
                 <div
-                    class="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between"
+                    class="container mx-auto flex flex-col md:flex-row items-center justify-between"
                 >
                     <!-- Left Section -->
                     <div class="text-center md:text-left md:w-1/2 space-y-4">
@@ -213,7 +238,7 @@
                         </button>
 
                         <!-- Main navigation -->
-                        <div class="max-w-[1400px] mx-auto">
+                        <div class="container mx-auto">
                             <div class="flex justify-between items-center py-2">
                                 <!-- Mobile menu button -->
                             </div>
@@ -340,7 +365,7 @@
                 <div class="bg-gray-100 py-6 px-4 md:px-16">
                     <!-- Top circular images -->
                     <div
-                        class="flex justify-center gap-7 flex-wrap overflow-x-auto max-w-[1400px] mx-auto"
+                        class="flex justify-center gap-7 flex-wrap overflow-x-auto container mx-auto"
                     >
                         <img
                             src="img/1.png"
@@ -380,7 +405,7 @@
                     </div>
 
                     <!-- Main Donation Section -->
-                    <div class="mt-8 max-w-[1400px] mx-auto">
+                    <div class="mt-8 container mx-auto">
                         <div
                             class="grid grid-cols-1 lg:grid-cols-5 gap-4 items-center bg-white shadow-lg rounded-xl"
                         >
@@ -1596,95 +1621,110 @@
                                         <span>KİTAP</span>
                                     </div>
                                 </div>
+                                <div class="max-w-[470px] mx-auto mt-8">
+                                    <!-- Donation Type Dropdown -->
+                                    <div class="mb-4">
+                                        <select
+                                            class="w-full border border-[var(--color-primary)] text-[var(--color-primary)] font-medium p-4 rounded focus:outline-none text-sm"
+                                        >
+                                            <option>BAĞIŞ SEÇİN</option>
+                                            <option>Gıda Yardımı</option>
+                                            <option>Eğitim Desteği</option>
+                                        </select>
+                                    </div>
 
-                                <!-- Donation Type Dropdown -->
-                                <div class="mb-4">
-                                    <select
-                                        class="w-full border border-gray-300 rounded px-4 py-2 text-sm focus:outline-none"
+                                    <!-- Amount selector -->
+                                    <div
+                                        class="flex gap-2 items-center flex-col md:flex-row"
                                     >
-                                        <option>BAĞIŞ SEÇİN</option>
-                                        <option>Gıda Yardımı</option>
-                                        <option>Eğitim Desteği</option>
-                                    </select>
-                                </div>
-
-                                <!-- Donation Amounts -->
-                                <div
-                                    class="flex flex-wrap gap-2 justify-center mb-4"
-                                >
-                                    <button
-                                        class="border rounded-full w-14 h-14 text-sm hover:bg-blue-100"
-                                    >
-                                        25 TL
-                                    </button>
-                                    <button
-                                        class="border rounded-full w-14 h-14 text-sm hover:bg-blue-100"
-                                    >
-                                        50 TL
-                                    </button>
-                                    <button
-                                        class="border rounded-full w-14 h-14 text-sm hover:bg-blue-100"
-                                    >
-                                        75 TL
-                                    </button>
-                                    <button
-                                        class="border rounded-full w-14 h-14 text-sm hover:bg-blue-100"
-                                    >
-                                        100 TL
-                                    </button>
-                                    <input
-                                        type="text"
-                                        placeholder="Kendim Belirleyeceğim"
-                                        class="border rounded-full px-4 py-1 text-sm focus:outline-none w-full sm:w-auto"
-                                    />
-                                </div>
-
-                                <!-- Donation Frequency -->
-                                <div
-                                    class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-6 text-sm text-center"
-                                >
-                                    <label class="flex items-center gap-1">
+                                        <div
+                                            class="flex gap-2 mb-2 w-full mt-2 justify-center md:justify-start"
+                                        >
+                                            <button
+                                                class="w-16 h-16 rounded-full border border-[#A8BEE2] text-[var(--color-primary)] amount-item"
+                                            >
+                                                25 <br />TL
+                                            </button>
+                                            <button
+                                                class="w-16 h-16 rounded-full border border-[#A8BEE2] text-[var(--color-primary)] amount-item"
+                                            >
+                                                50 <br />
+                                                TL
+                                            </button>
+                                            <button
+                                                class="w-16 h-16 rounded-full border border-[#A8BEE2] text-[var(--color-primary)] amount-item"
+                                            >
+                                                75 <br />
+                                                TL
+                                            </button>
+                                            <button
+                                                class="w-16 h-16 rounded-full border border-[#A8BEE2] text-[var(--color-primary)] amount-item"
+                                            >
+                                                100 <br />
+                                                TL
+                                            </button>
+                                        </div>
                                         <input
-                                            type="radio"
-                                            name="donation_type"
-                                            class="accent-blue-600"
-                                            checked
+                                            type="text"
+                                            placeholder="Kendim Belirleyeceğim"
+                                            class="w-full border px-3 py-5 rounded-lg border-[#A8BEE2] text-[var(--color-primary)] focus:outline-none"
                                         />
-                                        <span>Tek Seferlik Bağış</span>
-                                    </label>
-                                    <label class="flex items-center gap-1">
-                                        <input
-                                            type="radio"
-                                            name="donation_type"
-                                            class="accent-blue-600"
-                                        />
-                                        <span>Aylık Düzenli Bağış</span>
-                                    </label>
-                                </div>
+                                    </div>
 
-                                <!-- Buttons -->
-                                <div
-                                    class="flex flex-col sm:flex-row justify-center gap-4"
-                                >
-                                    <button
-                                        class="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded flex items-center justify-center gap-1"
+                                    <!-- Donation Type -->
+                                    <div
+                                        class="flex flex-col md:flex-row justify-center gap-2 sm:gap-4 py-4 mb-4 text-sm text-gray-600 mt-4 items-center md:items-start"
                                     >
-                                        <img
-                                            src="img/heart.svg"
-                                            class="border-r pr-2"
-                                            alt=""
-                                        />
-                                        HIZLI BAĞIŞ YAP
-                                    </button>
-                                    <button
-                                        class="border border-blue-400 text-blue-600 font-semibold py-2 px-4 rounded flex items-center justify-center gap-1 hover:bg-blue-50"
+                                        <label
+                                            class="flex items-center gap-1 text-sm font-medium text-[var(--color-primary)]"
+                                        >
+                                            <input
+                                                type="radio"
+                                                name="burs-type"
+                                                class="accent-[var(--color-secondary)]"
+                                            />
+                                            Tek Seferlik Bağış
+                                        </label>
+
+                                        <label
+                                            class="flex items-center gap-1 text-sm font-medium text-[var(--color-primary)]"
+                                        >
+                                            <input
+                                                type="radio"
+                                                name="burs-type"
+                                                class="accent-[var(--color-secondary)]"
+                                            />
+                                            Aylık Düzenli Bağış
+                                        </label>
+                                    </div>
+
+                                    <!-- Action Buttons -->
+                                    <div
+                                        class="flex gap-2 mt-4 flex-col items-center md:items-start sm:flex-row justify-center"
                                     >
-                                        <img
-                                            src="img/Group 89.png"
-                                            class="border-r pr-2"
-                                        />
-                                        SEPETE EKLE
-                                    </button>
+                                        <a href="checkout.html">
+                                            <button
+                                                class="w-48 h-14 px-2 bg-[var(--color-secondary)] hover:bg-orange-500 text-white font-medium text-sm py-2 rounded-lg flex items-center justify-center gap-2 transition"
+                                            >
+                                                <img
+                                                    src="img/heart.svg"
+                                                    alt=""
+                                                    class="border-r pr-2 border-[#D58300]"
+                                                />
+                                                HIZLI BAĞIŞ YAP
+                                            </button>
+                                        </a>
+                                        <button
+                                            class="w-48 h-14 px-2 border-1 border-blue-500 text-blue-600 font-medium text-sm py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-blue-50 transition"
+                                        >
+                                            <img
+                                                src="img/Group 89.png"
+                                                alt=""
+                                                class="border-r pr-2 border-[#FFAE2C]"
+                                            />
+                                            SEPETE EKLE
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1693,7 +1733,7 @@
             </section>
 
             <!-- 3 cards section -->
-            <section class="pt-16">
+            <section class="pt-16 pb-16">
                 <div class="mx-auto px-4 text-center rounded-sm">
                     <!-- Section Header -->
                     <h3 class="text-3xl text-[#FF9D00] font-medium mb-2">
@@ -1704,208 +1744,322 @@
                     >
                         Siz de Destek Olun
                     </h2>
-                    <!-- Carousel Container -->
-                    <div
-                        class="flex space-x-6 overflow-x-auto scrollbar-hide py-9 justify-center pb-40"
-                    >
-                        <!-- Add more cards as needed -->
-                        <div
-                            class="bg-white rounded-xl shadow-2xl p-6 max-w-[437px] flex-shrink-0"
-                        >
-                            <p class="text-[15px] text-[#FF9D00] font-medium">
-                                Afrika
-                            </p>
-                            <h3
-                                class="text-[21px] font-bold text-[#003E92] my-1"
-                            >
-                                Cami İnşaatı
-                            </h3>
-                            <p class="text-[16px] text-[#707070] mb-16">
-                                Lorem Ipsum has been the industry’s standard
-                                dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it
-                                to make a type specimen book.
-                            </p>
 
-                            <!-- Progress Bar -->
-                            <div class="mb-2">
+                    <div class="container mx-auto">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
                                 <div
-                                    class="flex justify-between text-sm text-[#707070] mb-1"
+                                    class="bg-white rounded-xl shadow-lg p-6 max-w-[437px] flex-shrink-0 mx-auto"
                                 >
-                                    <span>%18</span>
-                                </div>
-                                <div class="w-full bg-gray-200 h-2 rounded">
-                                    <div
-                                        class="bg-orange-400 h-2 rounded w-[18%]"
-                                    ></div>
+                                    <p
+                                        class="text-[15px] text-[#FF9D00] font-medium"
+                                    >
+                                        Afrika
+                                    </p>
+                                    <h3
+                                        class="text-[21px] font-bold text-[#003E92] my-1"
+                                    >
+                                        Cami İnşaatı
+                                    </h3>
+                                    <p class="text-[16px] text-[#707070] mb-16">
+                                        Lorem Ipsum has been the industry’s
+                                        standard dummy text ever since the
+                                        1500s, when an unknown printer took a
+                                        galley of type and scrambled it to make
+                                        a type specimen book.
+                                    </p>
+
+                                    <!-- Progress Bar -->
+                                    <div class="mb-2">
+                                        <div
+                                            class="flex justify-between text-sm text-[#707070] mb-1"
+                                        >
+                                            <span>%18</span>
+                                        </div>
+                                        <div
+                                            class="w-full bg-gray-200 h-2 rounded"
+                                        >
+                                            <div
+                                                class="bg-orange-400 h-2 rounded w-[18%]"
+                                            ></div>
+                                        </div>
+                                    </div>
+
+                                    <p
+                                        class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
+                                    >
+                                        1568 kişi bu projeyi destekledi.
+                                    </p>
+
+                                    <button
+                                        class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
+                                    >
+                                        DESTEK OL
+                                    </button>
                                 </div>
                             </div>
-
-                            <p
-                                class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
-                            >
-                                1568 kişi bu projeyi destekledi.
-                            </p>
-
-                            <button
-                                class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
-                            >
-                                DESTEK OL
-                            </button>
-                        </div>
-                        <!-- Add more cards as needed -->
-                        <div
-                            class="bg-white rounded-xl shadow-2xl p-6 max-w-[437px] flex-shrink-0"
-                        >
-                            <p class="text-[15px] text-[#FF9D00] font-medium">
-                                Afrika
-                            </p>
-                            <h3
-                                class="text-[21px] font-bold text-[#003E92] my-1"
-                            >
-                                Cami İnşaatı
-                            </h3>
-                            <p class="text-[16px] text-[#707070] mb-16">
-                                Lorem Ipsum has been the industry’s standard
-                                dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it
-                                to make a type specimen book.
-                            </p>
-
-                            <!-- Progress Bar -->
-                            <div class="mb-2">
+                            <div class="item">
                                 <div
-                                    class="flex justify-between text-sm text-[#707070] mb-1"
+                                    class="bg-white rounded-xl shadow-lg p-6 max-w-[437px] flex-shrink-0 mx-auto"
                                 >
-                                    <span>%18</span>
-                                </div>
-                                <div class="w-full bg-gray-200 h-2 rounded">
-                                    <div
-                                        class="bg-orange-400 h-2 rounded w-[18%]"
-                                    ></div>
+                                    <p
+                                        class="text-[15px] text-[#FF9D00] font-medium"
+                                    >
+                                        Afrika
+                                    </p>
+                                    <h3
+                                        class="text-[21px] font-bold text-[#003E92] my-1"
+                                    >
+                                        Cami İnşaatı
+                                    </h3>
+                                    <p class="text-[16px] text-[#707070] mb-16">
+                                        Lorem Ipsum has been the industry’s
+                                        standard dummy text ever since the
+                                        1500s, when an unknown printer took a
+                                        galley of type and scrambled it to make
+                                        a type specimen book.
+                                    </p>
+
+                                    <!-- Progress Bar -->
+                                    <div class="mb-2">
+                                        <div
+                                            class="flex justify-between text-sm text-[#707070] mb-1"
+                                        >
+                                            <span>%18</span>
+                                        </div>
+                                        <div
+                                            class="w-full bg-gray-200 h-2 rounded"
+                                        >
+                                            <div
+                                                class="bg-orange-400 h-2 rounded w-[18%]"
+                                            ></div>
+                                        </div>
+                                    </div>
+
+                                    <p
+                                        class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
+                                    >
+                                        1568 kişi bu projeyi destekledi.
+                                    </p>
+
+                                    <button
+                                        class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
+                                    >
+                                        DESTEK OL
+                                    </button>
                                 </div>
                             </div>
-
-                            <p
-                                class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
-                            >
-                                1568 kişi bu projeyi destekledi.
-                            </p>
-
-                            <button
-                                class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
-                            >
-                                DESTEK OL
-                            </button>
-                        </div>
-                        <!-- Add more cards as needed -->
-                        <div
-                            class="bg-white rounded-xl shadow-2xl p-6 max-w-[437px] flex-shrink-0"
-                        >
-                            <p class="text-[15px] text-[#FF9D00] font-medium">
-                                Afrika
-                            </p>
-                            <h3
-                                class="text-[21px] font-bold text-[#003E92] my-1"
-                            >
-                                Cami İnşaatı
-                            </h3>
-                            <p class="text-[16px] text-[#707070] mb-16">
-                                Lorem Ipsum has been the industry’s standard
-                                dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it
-                                to make a type specimen book.
-                            </p>
-
-                            <!-- Progress Bar -->
-                            <div class="mb-2">
+                            <div class="item">
                                 <div
-                                    class="flex justify-between text-sm text-[#707070] mb-1"
+                                    class="bg-white rounded-xl shadow-lg p-6 max-w-[437px] flex-shrink-0 mx-auto"
                                 >
-                                    <span>%18</span>
-                                </div>
-                                <div class="w-full bg-gray-200 h-2 rounded">
-                                    <div
-                                        class="bg-orange-400 h-2 rounded w-[18%]"
-                                    ></div>
+                                    <p
+                                        class="text-[15px] text-[#FF9D00] font-medium"
+                                    >
+                                        Afrika
+                                    </p>
+                                    <h3
+                                        class="text-[21px] font-bold text-[#003E92] my-1"
+                                    >
+                                        Cami İnşaatı
+                                    </h3>
+                                    <p class="text-[16px] text-[#707070] mb-16">
+                                        Lorem Ipsum has been the industry’s
+                                        standard dummy text ever since the
+                                        1500s, when an unknown printer took a
+                                        galley of type and scrambled it to make
+                                        a type specimen book.
+                                    </p>
+
+                                    <!-- Progress Bar -->
+                                    <div class="mb-2">
+                                        <div
+                                            class="flex justify-between text-sm text-[#707070] mb-1"
+                                        >
+                                            <span>%18</span>
+                                        </div>
+                                        <div
+                                            class="w-full bg-gray-200 h-2 rounded"
+                                        >
+                                            <div
+                                                class="bg-orange-400 h-2 rounded w-[18%]"
+                                            ></div>
+                                        </div>
+                                    </div>
+
+                                    <p
+                                        class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
+                                    >
+                                        1568 kişi bu projeyi destekledi.
+                                    </p>
+
+                                    <button
+                                        class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
+                                    >
+                                        DESTEK OL
+                                    </button>
                                 </div>
                             </div>
-
-                            <p
-                                class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
-                            >
-                                1568 kişi bu projeyi destekledi.
-                            </p>
-
-                            <button
-                                class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
-                            >
-                                DESTEK OL
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Carousel Controls -->
-                    <div class="w-full flex justify-center relative">
-                        <div
-                            class="flex items-center justify-center md:justify-start gap-4 my-6 absolute -mt-24"
-                        >
-                            <button
-                                id="prevBtn"
-                                class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center"
-                            >
-                                <svg
-                                    class="w-5 h-5 text-[#003E92]"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    viewBox="0 0 24 24"
+                            <div class="item">
+                                <div
+                                    class="bg-white rounded-xl shadow-lg p-6 max-w-[437px] flex-shrink-0 mx-auto"
                                 >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M15 19l-7-7 7-7"
-                                    />
-                                </svg>
-                            </button>
+                                    <p
+                                        class="text-[15px] text-[#FF9D00] font-medium"
+                                    >
+                                        Afrika
+                                    </p>
+                                    <h3
+                                        class="text-[21px] font-bold text-[#003E92] my-1"
+                                    >
+                                        Cami İnşaatı
+                                    </h3>
+                                    <p class="text-[16px] text-[#707070] mb-16">
+                                        Lorem Ipsum has been the industry’s
+                                        standard dummy text ever since the
+                                        1500s, when an unknown printer took a
+                                        galley of type and scrambled it to make
+                                        a type specimen book.
+                                    </p>
 
-                            <div class="flex items-center gap-2">
-                                <span
-                                    class="dot h-1 w-10 bg-[#003E92] rounded-full transition-all duration-300 cursor-pointer"
-                                ></span>
-                                <span
-                                    class="dot h-1 w-6 bg-[#6b91bc] rounded-full transition-all duration-300 cursor-pointer"
-                                ></span>
-                                <span
-                                    class="dot h-1 w-6 bg-[#6b91bc] rounded-full transition-all duration-300 cursor-pointer"
-                                ></span>
+                                    <!-- Progress Bar -->
+                                    <div class="mb-2">
+                                        <div
+                                            class="flex justify-between text-sm text-[#707070] mb-1"
+                                        >
+                                            <span>%18</span>
+                                        </div>
+                                        <div
+                                            class="w-full bg-gray-200 h-2 rounded"
+                                        >
+                                            <div
+                                                class="bg-orange-400 h-2 rounded w-[18%]"
+                                            ></div>
+                                        </div>
+                                    </div>
+
+                                    <p
+                                        class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
+                                    >
+                                        1568 kişi bu projeyi destekledi.
+                                    </p>
+
+                                    <button
+                                        class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
+                                    >
+                                        DESTEK OL
+                                    </button>
+                                </div>
                             </div>
-
-                            <button
-                                id="nextBtn"
-                                class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center"
-                            >
-                                <svg
-                                    class="w-5 h-5 text-[#003E92]"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    viewBox="0 0 24 24"
+                            <div class="item">
+                                <div
+                                    class="bg-white rounded-xl shadow-lg p-6 max-w-[437px] flex-shrink-0 mx-auto"
                                 >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M9 5l7 7-7 7"
-                                    />
-                                </svg>
-                            </button>
+                                    <p
+                                        class="text-[15px] text-[#FF9D00] font-medium"
+                                    >
+                                        Afrika
+                                    </p>
+                                    <h3
+                                        class="text-[21px] font-bold text-[#003E92] my-1"
+                                    >
+                                        Cami İnşaatı
+                                    </h3>
+                                    <p class="text-[16px] text-[#707070] mb-16">
+                                        Lorem Ipsum has been the industry’s
+                                        standard dummy text ever since the
+                                        1500s, when an unknown printer took a
+                                        galley of type and scrambled it to make
+                                        a type specimen book.
+                                    </p>
+
+                                    <!-- Progress Bar -->
+                                    <div class="mb-2">
+                                        <div
+                                            class="flex justify-between text-sm text-[#707070] mb-1"
+                                        >
+                                            <span>%18</span>
+                                        </div>
+                                        <div
+                                            class="w-full bg-gray-200 h-2 rounded"
+                                        >
+                                            <div
+                                                class="bg-orange-400 h-2 rounded w-[18%]"
+                                            ></div>
+                                        </div>
+                                    </div>
+
+                                    <p
+                                        class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
+                                    >
+                                        1568 kişi bu projeyi destekledi.
+                                    </p>
+
+                                    <button
+                                        class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
+                                    >
+                                        DESTEK OL
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div
+                                    class="bg-white rounded-xl shadow-lg p-6 max-w-[437px] flex-shrink-0 mx-auto"
+                                >
+                                    <p
+                                        class="text-[15px] text-[#FF9D00] font-medium"
+                                    >
+                                        Afrika
+                                    </p>
+                                    <h3
+                                        class="text-[21px] font-bold text-[#003E92] my-1"
+                                    >
+                                        Cami İnşaatı
+                                    </h3>
+                                    <p class="text-[16px] text-[#707070] mb-16">
+                                        Lorem Ipsum has been the industry’s
+                                        standard dummy text ever since the
+                                        1500s, when an unknown printer took a
+                                        galley of type and scrambled it to make
+                                        a type specimen book.
+                                    </p>
+
+                                    <!-- Progress Bar -->
+                                    <div class="mb-2">
+                                        <div
+                                            class="flex justify-between text-sm text-[#707070] mb-1"
+                                        >
+                                            <span>%18</span>
+                                        </div>
+                                        <div
+                                            class="w-full bg-gray-200 h-2 rounded"
+                                        >
+                                            <div
+                                                class="bg-orange-400 h-2 rounded w-[18%]"
+                                            ></div>
+                                        </div>
+                                    </div>
+
+                                    <p
+                                        class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
+                                    >
+                                        1568 kişi bu projeyi destekledi.
+                                    </p>
+
+                                    <button
+                                        class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
+                                    >
+                                        DESTEK OL
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- four box section -->
             <section class="bg-[var(--color-primary)] py-10 px-4">
-                <div class="text-white max-w-[1400px] mx-auto mb-12">
+                <div class="text-white container mx-auto mb-12">
                     <!-- Section Heading -->
                     <h3
                         class="text-center text-[var(--color-secondary)] text-[28px] font-medium md:text-3xl"
@@ -2033,7 +2187,7 @@
             <!-- 3 cards section again -->
             <section class="py-10 px-4 bg-[#F4F4F4] text-center">
                 <div
-                    class="max-w-[1400px] p-1 mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-3"
+                    class="container p-1 mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-3"
                 >
                     <!-- Card -->
                     <a href="./blog.html">
@@ -2143,7 +2297,7 @@
 
             <!-- blurry image card section -->
             <section class="py-16 px-4 bg-white">
-                <div class="max-w-[1400px] mx-auto p-1">
+                <div class="container mx-auto p-1">
                     <!-- Section Heading -->
                     <div class="text-center mb-10">
                         <p class="text-3xl text-[#FF9D00] font-medium">
@@ -2318,7 +2472,7 @@
             <!-- last section -->
             <section class="py-10">
                 <div
-                    class="max-w-[1400px] mx-auto px-1 grid grid-cols-1 sm:grid-cols-2 gap-6"
+                    class="container mx-auto px-1 grid grid-cols-1 sm:grid-cols-2 gap-6"
                 >
                     <!-- Card 1 -->
                     <div
@@ -2372,9 +2526,67 @@
                 </div>
             </section>
         </main>
+        <!-- Floating Button -->
+        <div class="fixed bottom-6 right-6 z-50 cursor-pointer">
+            <!-- Speech Bubble -->
+            <div
+                class="relative bg-blue-900 text-white p-4 rounded-3xl shadow-lg flex items-end justify-end"
+            >
+                <!-- Pointer -->
+                <div
+                    class="absolute -left-3 bottom-6 w-0 h-0 border-t-[15px] border-t-transparent border-b-[15px] border-b-transparent border-r-[15px] border-r-blue-900"
+                ></div>
 
+                <!-- Text Content -->
+                <div class="h-24">
+                    <div class="text-[#FF9D00] text-4xl font-bold">BAĞIŞ</div>
+                    <div class="text-white text-4xl font-bold leading-6">
+                        8350
+                    </div>
+                    <div class="inline-block text-[#FF9D00] text-4xl font-bold">
+                        10 TL
+                    </div>
+                </div>
+                <div
+                    class="text-white space-y-1 text-right text-sm leading-tight"
+                >
+                    <div>
+                        <span class="text-white font-light text-2xl italic"
+                            >yaz</span
+                        >
+                    </div>
+                    <div class="text-blue-300 text-left text-sm leading-4">
+                        <p>'ye</p>
+                        Gönder
+                    </div>
+                    <div class="text-sm leading-3">Bağışta</div>
+                    <div class="text-sm leading-3">bulun</div>
+                </div>
+            </div>
+
+            <!-- Scroll-to-Top Button -->
+            <button
+                id="scrollToTopBtn"
+                class="hidden md:flex mt-3 w-16 h-16 rounded-full bg-[#FF9D00] items-center justify-center shadow-lg hover:bg-orange-600 transition"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 15l7-7 7 7"
+                    />
+                </svg>
+            </button>
+        </div>
         <footer class="bg-[#003E92] text-white py-12">
-            <div class="max-w-[1400px] mx-auto px-4">
+            <div class="container mx-auto px-4">
                 <!-- Newsletter -->
                 <div class="text-center">
                     <p class="text-[#FF9D00] text-2xl mb-2">
@@ -2647,6 +2859,59 @@
                 );
             }
         </script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                mouseDrag: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                dots: true,
+                touchDrag: true,
+                // slideTransition: "linear",
+                navText: [
+                    ` <svg
+                                    class="w-full h-full p-2 text-[#003E92]"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15 19l-7-7 7-7"
+                                    />
+                                </svg>`, // Left arrow
+                    ` <svg
+                                    class="w-full h-full p-2 text-[#003E92]"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M9 5l7 7-7 7"
+                                    />
+                                </svg>`, // Right arrow
+                ],
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3,
+                    },
+                },
+            });
+        </script>
+
         <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <script src="navbarFunc.js"></script>
         <script src="carousel.js" defer></script>

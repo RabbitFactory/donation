@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Carousel</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        />
+
+        <link rel="stylesheet" href="./index.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body>
+        <nav class="bg-[var(--color-primary)] text-white relative z-50">
+            <div
+                class="hidden lg:flex justify-between border-b-1 border-[#4779CC] container mx-auto"
+            >
+                <div class="flex gap-4 text-sm py-2">
+                    <div class="flex gap-0.5">
+                        <img src="./img/phone.svg" alt="" width="12px" />
+                        <p class="text-[12px] text-[#A8BEE2] font-medium">
+                            +90 212 451 49 00
+                        </p>
+                    </div>
+                    <div class="flex gap-1 text-[#A8BEE2]">
+                        <img src="./img/email.svg" alt="" width="16px" />
+                        <p class="text-[12px] font-medium">
+                            ihlasvakfi@ihlasvakfi.org.tr
+                        </p>
+                    </div>
+                </div>
+                <div class="text-sm py-2 flex gap-2">
+                    <img src="./img/card.svg" alt="" width="20px" />
+
+                    <p class="text-[12px] text-[#A8BEE2] font-medium">
+                        BANKA HESAP NUMARALARIMIZ.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Main navigation -->
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center py-2">
+                    <!-- Desktop navigation links -->
+                    <div class="hidden lg:flex gap-10 items-center">
+                        <a
+                            href="./2.html"
+                            class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
+                            >KURUMSAL</a
+                        >
+                        <a
+                            href="./blog.html"
+                            class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
+                            >FAALİYETLERİMİZ</a
+                        >
+                        <a
+                            href="./product.html"
+                            class="hover:text-[#FF9D00] transition-colors text-sm font-medium"
+                            >İLETİŞİM</a
+                        >
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <button
+                        id="mobile-menu-btn"
+                        class="lg:hidden flex flex-col gap-1 p-2 z-20"
+                    >
+                        <span
+                            class="w-6 h-0.5 bg-white transition-all duration-300"
+                        ></span>
+                        <span
+                            class="w-6 h-0.5 bg-white transition-all duration-300"
+                        ></span>
+                        <span
+                            class="w-6 h-0.5 bg-white transition-all duration-300"
+                        ></span>
+                    </button>
+
+                    <!-- Desktop action buttons -->
+                    <div class="hidden md:flex gap-2">
+                        <a
+                            href="./checkout.html"
+                            class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
+                        >
+                            <img
+                                src="./img/heart.svg"
+                                class="w-7 border-r pr-2 border-[#4779CC] border-opacity-30 font-medium"
+                                alt=""
+                            />
+                            <p class="text-sm">BAĞIŞ YAP</p>
+                        </a>
+
+                        <a
+                            href="./thanks.html"
+                            class="flex gap-2 justify-center items-center bg-[#4779CC] px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
+                        >
+                            <img
+                                src="./img/person.svg"
+                                class="w-6 border-r pr-2 border-black border-opacity-30 font-medium"
+                                alt=""
+                            />
+                            <p class="text-sm">GÖNÜLLÜ OL</p>
+                        </a>
+                        <a
+                            href="./failed.html"
+                            class="flex gap-2 border-white border px-3 py-2 rounded-md border-opacity-50 hover:-translate-y-1 hover:drop-shadow-2xl transition-all"
+                        >
+                            <img src="./img/sunshine.svg" class="w-8" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu with smooth animations -->
+                <div
+                    id="mobile-menu"
+                    class="lg:hidden overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0 px-2"
+                >
+                    <div class="flex flex-col gap-4 pb-4">
+                        <a
+                            href=""
+                            class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300"
+                            >KURUMSAL</a
+                        >
+                        <a
+                            href=""
+                            class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300 delay-75"
+                            >FAALİYETLERİMİZ</a
+                        >
+                        <a
+                            href=""
+                            class="hover:text-[#4779CC] py-2 border-b border-[#4779CC] transform translate-y-2 opacity-0 transition-all duration-300 delay-150"
+                            >İLETİŞİM</a
+                        >
+                        <div class="flex w-full justify-between gap-2 mt-2">
+                            <button
+                                class="flex gap-2 justify-center items-center bg-[var(--color-secondary)] px-2 rounded-md text-sm w-full"
+                            >
+                                <img src="./img/heart.svg" class="w-5" alt="" />
+                                <p>BAĞIŞ YAP</p>
+                            </button>
+                            <button
+                                class="flex gap-2 justify-center items-center bg-[#4779CC] rounded-md px-2 w-full"
+                            >
+                                <img
+                                    src="./img/person.svg"
+                                    class="w-3"
+                                    alt=""
+                                />
+                                <p class="text-sm">GÖNÜLLÜ OL</p>
+                            </button>
+                            <button
+                                class="flex gap-2 border-white border p-3 rounded-md"
+                            >
+                                <img
+                                    src="./img/sunshine.svg"
+                                    class="w-16"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                        <!-- Mobile contact info -->
+                        <div
+                            class="flex flex-col gap-2 pt-2 border-t border-[#4779CC] text-sm transform translate-y-2 opacity-0 transition-all duration-300 delay-300"
+                        >
+                            <div class="flex gap-2">
+                                <img
+                                    src="./img/phone.svg"
+                                    alt=""
+                                    width="16px"
+                                />
+                                <p>+90 212 451 49 00</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img
+                                    src="./img/email.svg"
+                                    alt=""
+                                    width="16px"
+                                />
+                                <p>ihlasvakfi@ihlasvakfi.org.tr</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="./img/card.svg" width="16px" alt="" />
+                                <p class="text-sm">
+                                    BANKA HESAP NUMARALARIMIZ.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="absolute -top-3 left-[50%] -translate-x-[50%] bg-white rounded-xl p-4 pt-7 hidden lg:block shadow-lg w-[150px] h-[160px]"
+            >
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="Logo" />
+                </a>
+            </div>
+
+            <!-- Mobile logo -->
+            <div
+                class="lg:hidden absolute -top-2 right-3 bg-white rounded-lg p-2 pt-3"
+            >
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="Logo" class="h-16" />
+                </a>
+            </div>
+        </nav>
+        <div class="container mx-auto">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 max-w-[437px] flex-shrink-0 mx-auto"
+                    >
+                        <p class="text-[15px] text-[#FF9D00] font-medium">
+                            Afrika
+                        </p>
+                        <h3 class="text-[21px] font-bold text-[#003E92] my-1">
+                            Cami İnşaatı
+                        </h3>
+                        <p class="text-[16px] text-[#707070] mb-16">
+                            Lorem Ipsum has been the industry’s standard dummy
+                            text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a
+                            type specimen book.
+                        </p>
+
+                        <!-- Progress Bar -->
+                        <div class="mb-2">
+                            <div
+                                class="flex justify-between text-sm text-[#707070] mb-1"
+                            >
+                                <span>%18</span>
+                            </div>
+                            <div class="w-full bg-gray-200 h-2 rounded">
+                                <div
+                                    class="bg-orange-400 h-2 rounded w-[18%]"
+                                ></div>
+                            </div>
+                        </div>
+
+                        <p
+                            class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
+                        >
+                            1568 kişi bu projeyi destekledi.
+                        </p>
+
+                        <button
+                            class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
+                        >
+                            DESTEK OL
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 max-w-[437px] flex-shrink-0 mx-auto"
+                    >
+                        <p class="text-[15px] text-[#FF9D00] font-medium">
+                            Afrika
+                        </p>
+                        <h3 class="text-[21px] font-bold text-[#003E92] my-1">
+                            Cami İnşaatı
+                        </h3>
+                        <p class="text-[16px] text-[#707070] mb-16">
+                            Lorem Ipsum has been the industry’s standard dummy
+                            text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a
+                            type specimen book.
+                        </p>
+
+                        <!-- Progress Bar -->
+                        <div class="mb-2">
+                            <div
+                                class="flex justify-between text-sm text-[#707070] mb-1"
+                            >
+                                <span>%18</span>
+                            </div>
+                            <div class="w-full bg-gray-200 h-2 rounded">
+                                <div
+                                    class="bg-orange-400 h-2 rounded w-[18%]"
+                                ></div>
+                            </div>
+                        </div>
+
+                        <p
+                            class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
+                        >
+                            1568 kişi bu projeyi destekledi.
+                        </p>
+
+                        <button
+                            class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
+                        >
+                            DESTEK OL
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 max-w-[437px] flex-shrink-0 mx-auto"
+                    >
+                        <p class="text-[15px] text-[#FF9D00] font-medium">
+                            Afrika
+                        </p>
+                        <h3 class="text-[21px] font-bold text-[#003E92] my-1">
+                            Cami İnşaatı
+                        </h3>
+                        <p class="text-[16px] text-[#707070] mb-16">
+                            Lorem Ipsum has been the industry’s standard dummy
+                            text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a
+                            type specimen book.
+                        </p>
+
+                        <!-- Progress Bar -->
+                        <div class="mb-2">
+                            <div
+                                class="flex justify-between text-sm text-[#707070] mb-1"
+                            >
+                                <span>%18</span>
+                            </div>
+                            <div class="w-full bg-gray-200 h-2 rounded">
+                                <div
+                                    class="bg-orange-400 h-2 rounded w-[18%]"
+                                ></div>
+                            </div>
+                        </div>
+
+                        <p
+                            class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
+                        >
+                            1568 kişi bu projeyi destekledi.
+                        </p>
+
+                        <button
+                            class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
+                        >
+                            DESTEK OL
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 max-w-[437px] flex-shrink-0 mx-auto"
+                    >
+                        <p class="text-[15px] text-[#FF9D00] font-medium">
+                            Afrika
+                        </p>
+                        <h3 class="text-[21px] font-bold text-[#003E92] my-1">
+                            Cami İnşaatı
+                        </h3>
+                        <p class="text-[16px] text-[#707070] mb-16">
+                            Lorem Ipsum has been the industry’s standard dummy
+                            text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a
+                            type specimen book.
+                        </p>
+
+                        <!-- Progress Bar -->
+                        <div class="mb-2">
+                            <div
+                                class="flex justify-between text-sm text-[#707070] mb-1"
+                            >
+                                <span>%18</span>
+                            </div>
+                            <div class="w-full bg-gray-200 h-2 rounded">
+                                <div
+                                    class="bg-orange-400 h-2 rounded w-[18%]"
+                                ></div>
+                            </div>
+                        </div>
+
+                        <p
+                            class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
+                        >
+                            1568 kişi bu projeyi destekledi.
+                        </p>
+
+                        <button
+                            class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
+                        >
+                            DESTEK OL
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 max-w-[437px] flex-shrink-0 mx-auto"
+                    >
+                        <p class="text-[15px] text-[#FF9D00] font-medium">
+                            Afrika
+                        </p>
+                        <h3 class="text-[21px] font-bold text-[#003E92] my-1">
+                            Cami İnşaatı
+                        </h3>
+                        <p class="text-[16px] text-[#707070] mb-16">
+                            Lorem Ipsum has been the industry’s standard dummy
+                            text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a
+                            type specimen book.
+                        </p>
+
+                        <!-- Progress Bar -->
+                        <div class="mb-2">
+                            <div
+                                class="flex justify-between text-sm text-[#707070] mb-1"
+                            >
+                                <span>%18</span>
+                            </div>
+                            <div class="w-full bg-gray-200 h-2 rounded">
+                                <div
+                                    class="bg-orange-400 h-2 rounded w-[18%]"
+                                ></div>
+                            </div>
+                        </div>
+
+                        <p
+                            class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
+                        >
+                            1568 kişi bu projeyi destekledi.
+                        </p>
+
+                        <button
+                            class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
+                        >
+                            DESTEK OL
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 max-w-[437px] flex-shrink-0 mx-auto"
+                    >
+                        <p class="text-[15px] text-[#FF9D00] font-medium">
+                            Afrika
+                        </p>
+                        <h3 class="text-[21px] font-bold text-[#003E92] my-1">
+                            Cami İnşaatı
+                        </h3>
+                        <p class="text-[16px] text-[#707070] mb-16">
+                            Lorem Ipsum has been the industry’s standard dummy
+                            text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a
+                            type specimen book.
+                        </p>
+
+                        <!-- Progress Bar -->
+                        <div class="mb-2">
+                            <div
+                                class="flex justify-between text-sm text-[#707070] mb-1"
+                            >
+                                <span>%18</span>
+                            </div>
+                            <div class="w-full bg-gray-200 h-2 rounded">
+                                <div
+                                    class="bg-orange-400 h-2 rounded w-[18%]"
+                                ></div>
+                            </div>
+                        </div>
+
+                        <p
+                            class="text-[16px] text-[#707070] mb-4 mt-5 text-left"
+                        >
+                            1568 kişi bu projeyi destekledi.
+                        </p>
+
+                        <button
+                            class="bg-white text-[#003E92] border border-[#A8BEE2] hover:bg-[#EDF5FF] px-7 py-5 rounded-lg transition w-52 mt-9 mb-8"
+                        >
+                            DESTEK OL
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                mouseDrag: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                dots: true,
+                touchDrag: true,
+                // slideTransition: "linear",
+                navText: [
+                    ` <svg
+                                    class="w-full h-full p-2 text-[#003E92]"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15 19l-7-7 7-7"
+                                    />
+                                </svg>`, // Left arrow
+                    ` <svg
+                                    class="w-full h-full p-2 text-[#003E92]"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M9 5l7 7-7 7"
+                                    />
+                                </svg>`, // Right arrow
+                ],
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3,
+                    },
+                },
+            });
+        </script>
+    </body>
+</html>
