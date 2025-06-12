@@ -240,21 +240,38 @@
             </div>
             <button class="bg-[var(--color-secondary)] uppercase rounded-lg text-white text-sm font-medium py-5 px-3 hover:-translate-y-2 hover:shadow-2xl transition ">Ödeme sayfasına Dön</button>
 
-        <!-- Floating SMS Donation Button -->
-        <div class="fixed bottom-6 right-6 z-50">
-          <div
-            class="bg-blue-900 text-white rounded-xl shadow-lg px-4 py-3 flex flex-col items-center gap-1 text-center w-32"
-          >
-            <span class="text-sm text-yellow-400 font-bold">BAĞIŞ</span>
-            <span class="text-2xl font-bold">8350</span>
-            <span class="text-yellow-400 font-bold">10 TL</span>
-            <span class="text-xs text-white"
-              >yaz<br />ve Gönder<br />Bağışta Bulun</span
-            >
-          </div>
-        </div>
+        <!-- Floating Button -->
+<div class="fixed bottom-6 right-6 z-50 cursor-pointer">
+  <!-- Speech Bubble -->
+  <div class="relative bg-blue-900 text-white p-4 rounded-3xl shadow-lg flex  items-end justify-end ">
+    <!-- Pointer -->
+    <div class="absolute -left-3 bottom-6 w-0 h-0 border-t-[15px] border-t-transparent border-b-[15px] border-b-transparent border-r-[15px] border-r-blue-900"></div>
+    
+    <!-- Text Content -->
+    <div class="h-24"
+    ><div class="text-[#FF9D00] text-4xl  font-bold">BAĞIŞ</div>
+    <div class="text-white text-4xl font-bold leading-6">8350</div>
+    <div class=" inline-block text-[#FF9D00] text-4xl font-bold">
+      10 TL
+    </div></div>
+    <div class="text-white space-y-1 text-right text-sm leading-tight">
+      <div><span class="text-white font-light text-2xl italic ">yaz</span></div>
+      <div class="text-blue-300 text-left text-sm  leading-4"><p>'ye </p>
+      Gönder</div>
+      <div class="text-sm leading-3" >Bağışta</div>
+      <div class="text-sm leading-3">bulun</div>
+    </div>
+  </div>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scrollToTopBtn" class="hidden md:flex mt-3 w-16 h-16 rounded-full bg-[#FF9D00] items-center justify-center shadow-lg hover:bg-orange-600 transition">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
       </section>
     </main>
+    
     <footer class="bg-[#003E92] text-white py-12">
             <div class="container mx-auto px-4">
                 <!-- Newsletter -->
